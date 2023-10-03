@@ -2,5 +2,6 @@
 title: Welcome to Quartz
 ---
 
-This is a blank Quartz installation.
-See the [documentation](https://quartz.jzhao.xyz) for how to get started.
+Hello And welcome to my blog this is my main page
+
+ checkout my other pages [[Test 1]] [[Test II 1]]
