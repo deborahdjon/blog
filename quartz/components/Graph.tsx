@@ -32,7 +32,7 @@ const defaultOptions: GraphOptions = {
     centerForce: 0.3,
     linkDistance: 30,
     fontSize: 0.6,
-    opacityScale: 1,
+    opacityScale: 3,
     showTags: true,
     removeTags: [],
   },
@@ -57,7 +57,7 @@ export default ((opts?: GraphOptions) => {
     const globalGraph = { ...defaultOptions.globalGraph, ...opts?.globalGraph }
     return (
       <div class={`graph ${displayClass ?? ""}`}>
-        <h3>Graph View</h3>
+        <h3>Connected Posts</h3>
         <div class="graph-outer">
           <div id="graph-container" data-cfg={JSON.stringify(localGraph)}></div>
           <svg

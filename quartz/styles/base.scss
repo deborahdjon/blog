@@ -137,7 +137,6 @@ a {
       margin-top: $topSpacing;
       box-sizing: border-box;
       padding: 0 4rem;
-      position: fixed;
       @media all and (max-width: $fullPageWidth) {
         position: initial;
         flex-direction: row;
@@ -145,10 +144,12 @@ a {
         width: initial;
         margin-top: 2rem;
       }
+      position:sticky;
     }
 
     & .sidebar.left {
       left: calc(calc(100vw - $pageWidth) / 2 - $sidePanelWidth);
+      
       @media all and (max-width: $fullPageWidth) {
         gap: 0;
         align-items: center;

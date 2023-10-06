@@ -1,12 +1,23 @@
 @use "../../styles/variables.scss" as *;
 
+#nav_spacer {
+  height: 2em;
+  // background-color: #fff5e3;
+  z-index: 0;
+  position:sticky;
+  height: 50px;
+
+}
+
 .search {
   min-width: fit-content;
-  max-width: 14rem;
+  max-width: 2rem;
   flex-grow: 0.3;
 
+
+
   & > #search-icon {
-    background-color: var(--lightgray);
+    //background-color: var(--lightgray);
     border-radius: 4px;
     height: 2rem;
     display: flex;
@@ -16,6 +27,7 @@
 
     & > div {
       flex-grow: 1;
+      
     }
 
     & > p {

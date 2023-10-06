@@ -1,8 +1,17 @@
 ---
-title: Welcome to Quartz
+title: Welcome to the Blog!
 ---
 
-Hello And welcome to my blog this is my main page
+
+# Title
+[[toc]]
+## Test
+
+
+## Test
+Hello And welcome to my blog this is my main page. 
+
+Down below  you can see the knowledge graph.
 
  checkout my other pages [[Test 1]] [[Test II 1]]
 

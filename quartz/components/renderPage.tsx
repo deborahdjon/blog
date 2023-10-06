@@ -120,6 +120,7 @@ export function renderPage(
   const doc = (
     <html>
       <Head {...componentData} />
+      <div id="nav_spacer"></div>
       <body data-slug={slug}>
         <div id="quartz-root" class="page">
           <Body {...componentData}>
