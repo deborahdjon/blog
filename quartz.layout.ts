@@ -6,7 +6,7 @@ export const sharedPageComponents: SharedLayout = {
   // 
   head: Component.Head(),
   header: [  
-    Component.WebsiteHeader()  
+    Component.Navigation()  
   ],
   footer: Component.Footer({
     links: {
@@ -25,7 +25,7 @@ export const defaultContentPageLayout: PageLayout = {
   ],
   left: [
     //Component.WebsiteHeader(),
-    Component.PageTitle(),
+   // Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
     Component.Search(),
     Component.Darkmode(),

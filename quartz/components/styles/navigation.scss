@@ -63,17 +63,17 @@
 
   #NavBar-id ul li {
     cursor: pointer;
-    display: inline-block;
-    margin: 0 10px;
-    list-style: none;
+    display: inline-block !important; 
+    margin: 0 10px !important; 
+    list-style: none !important;
     position: relative;
     
     /* Line under navigation */
   }
   #NavBar-id ul li a {
     color: #ffa500;
-    font-weight: var(--bs-body-font-weight)!important;
-    line-height: var(--bs-body-line-height)!important;
+    // font-weight: var(--bs-body-font-weight)!important;
+    // line-height: var(--bs-body-line-height)!important;
   }
   #NavBar-id ul li a:hover {
     color: #ffa500 !important;
