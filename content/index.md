@@ -2,6 +2,8 @@
 title: "Deborah Djon"
 showToc: false
 ---
+  <meta charset="UTF-8">
+
 <style>
 .article-title , .content-meta, .graph{
     display: none
@@ -324,7 +326,7 @@ d="M346.822 266.563C346.822 266.563 326.58 276.871 323.853 278.332C321.126 279.7
 
 </g>
 </svg>
-
+<html>
 <div class="map-popover" id="pin-dallas-desc">
   <h2>Test</h2>
   <p>I am describing a test</p>
@@ -335,7 +337,7 @@ d="M346.822 266.563C346.822 266.563 326.58 276.871 323.853 278.332C321.126 279.7
 
 
 <script>
-  console.log(  );
+console.log("Hello");
 
 var pins = document.getElementsByClassName('map-pin');
 console.log("Hello");
@@ -360,6 +362,6 @@ for (var i = 0; i < pins.length; i++) {
     }
 }
 
-
 </script>
             
+</html>
