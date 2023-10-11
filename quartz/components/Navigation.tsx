@@ -12,10 +12,10 @@ function Navigation() {
 
   <nav id="NavBar-id">
       <ul>
-        <li><a href="/blog">Home</a></li>
-        <li><a href="https://djon.info/projects/" >Projects</a></li>
-        <li><a href="https://djon.info/cv/" >CV</a></li>
-        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="Projects" >Projects</a></li>
+        <li><a href="assets/CV_Deborah_Djon.pdf" >CV</a></li>
+        <li><a href="/Blog/Welcome">Blog</a></li>
     </ul>
   </nav>
       <div id="logo" class="line-container">
