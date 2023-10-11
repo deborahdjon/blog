@@ -6,4 +6,5 @@ showToc: true
 .article-title , .content-meta, .graph{
     display: none
 }
-CV_Deborah_Djon.pdf
+
+![[CV_Deborah_Djon.pdf]]

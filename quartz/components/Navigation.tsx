@@ -14,7 +14,7 @@ function Navigation() {
       <ul>
         <li><a href="/">Home</a></li>
         <li><a href="Projects" >Projects</a></li>
-        <li><a href="assets/CV_Deborah_Djon.pdf" >CV</a></li>
+        <li><a href="/CV" >CV</a></li>
         <li><a href="/Blog/Welcome">Blog</a></li>
     </ul>
   </nav>
