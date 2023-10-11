@@ -1,0 +1,321 @@
+/*Variables*/
+.fill1 {
+  fill: #ffa500;
+}
+.fill2 {
+  fill: #ffd078;
+}
+.fill3 {
+  fill: #7c776d;
+}
+.fillbg {
+  fill: #fff5e3;
+}
+.stroke1 {
+  stroke: #ffa500;
+}
+.stroke2 {
+  stroke: #ffd078;
+}
+.stroke3 {
+  stroke: #7c776d;
+}
+.strokebg {
+  stroke: #fff5e3;
+}
+#skills {
+  /*Recoloring the framework logos*/
+}
+#skills .item-container {
+  padding: 20px;
+  display: flex;
+  justify-content: end;
+}
+#skills .item-container .item {
+  width: 8em;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+#skills .item-container .item svg {
+  max-width: 8em;
+  min-width: 5em;
+  max-height: 8em;
+}
+#skills .item-container .item .tb-desc {
+  min-height: 50px;
+  font-size: 15pt;
+}
+#skills .tb-single {
+  color: #514e47;
+  font-size: 25pt;
+  text-align: center;
+}
+/*Layout*/
+body {
+  height: 100vh;
+  margin: 0;
+  background-color: #fff5e3;
+  z-index: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body p {
+  color: #514e47;
+}
+body a {
+  text-decoration: none;
+  color: #514e47;
+}
+body h1,
+body h2,
+body h3,
+body h4,
+body h5 {
+  color: #25231f;
+}
+#page-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+#page-content .spacer {
+  background-color: #fff5e3;
+  height: 100%;
+  flex: 1;
+  width: 20%;
+}
+#page-content #main-page {
+  flex: 3;
+  width: 80%;
+  background-color: #fff5e3;
+}
+.footer {
+  height: 100px;
+  background-color: #ffa500;
+}
+/* Navigation */
+.nav_spacer {
+  height: 50px;
+
+  background-color: #fff5e3;
+  /* background-color: #dd9614; */
+}
+nav {
+  z-index: 10;
+  background-color: #fff5e3b3;
+  justify-content: right;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  font-size: 14pt;
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  align-items: center!important;
+  font-family: Gill Sans,Gill Sans MT,Calibri,'Trebuchet MS',sans-serif !important;
+  height: 25px;
+
+  
+}
+nav ul li {
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 10px;
+  color: #ffa500;
+  list-style: none;
+  position: relative;
+  /* Line under navigation */
+}
+nav ul li a {
+  color: #ffa500;
+}
+nav ul li::after {
+  content: '';
+  height: 3px;
+  width: 0;
+  background: #ffa500;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: 0.5s;
+}
+nav ul li:hover::after {
+  width: 100%;
+}
+/* Deborah Djon Logo */
+#logo {
+  z-index: 20;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+#logo svg {
+  height: 5em;
+  cursor: pointer;
+}
+#logo svg path {
+  height: 4em;
+  cursor: pointer;
+  stroke: #ffa500;
+  stroke-width: 10px;
+  stroke-linecap: round;
+  fill: none;
+  stroke-linejoin: "round";
+}
+#logo:hover svg path {
+  stroke: #514e47;
+}
+/* -- Home Page --*/
+/* Face */
+#face-svg-container {
+  top: 0;
+  left: 0;
+  text-align: center;
+  background-color: #fff5e3;
+  height: 300pt;
+  margin-bottom: -15px;
+  padding: 0;
+}
+#face-svg {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 0;
+  animation-name: dash;
+  animation-duration: 6s;
+  animation-timing-function: ease-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+}
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 1;
+  }
+  10% {
+    stroke-dashoffset: 1;
+  }
+  40% {
+    stroke-dashoffset: 0.8;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+/* Sections */
+#introduction {
+  display: flex;
+  flex-direction: column;
+}
+#greeting {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+}
+#greeting p {
+  font-size: 10pt;
+  line-height: 0%;
+}
+#intro_caption {
+  font-size: 20pt;
+  text-align: center;
+  margin-top: 20pt;
+}
+#description {
+  text-align: center;
+}
+.text-accent {
+  color: #ffa500;
+}
+.info-box {
+  border-radius: 25px;
+  border-style: solid;
+  border-color: #ffa500;
+  border-width: 4px;
+  border-inline-color: #ffa500;
+  padding: 5px 10px 5px 10px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  background-color: #fff5e3;
+  font-size: 12pt;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.info-box .info-box-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.info-box .info-box-content .card {
+  margin: 1%;
+  overflow: hidden;
+  border-width: 4px;
+  border-color: #ffa500;
+  border-radius: 10px;
+  width: 250px;
+  height: 20em;
+  background-color: #fff5e3;
+}
+.info-box .info-box-content .card:hover,
+.info-box .info-box-content .card a {
+  border-color: #514e47;
+}
+.info-box .info-box-content .card img {
+  object-fit: cover;
+  height: 40%;
+  width: 400px;
+  align-self: center;
+}
+.more {
+  text-align: right;
+  padding: 3%;
+}
+.more p a {
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 10px;
+  color: #ffa500;
+  list-style: none;
+  position: relative;
+  /* Line under navigation */
+}
+.more p a a {
+  color: #ffa500;
+}
+.more p a::after {
+  content: '';
+  height: 3px;
+  width: 0;
+  background: #ffa500;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: 0.5s;
+}
+.more p a:hover::after {
+  width: 100%;
+}
+#skills .item-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#skills .item-container .item {
+  padding: 10px;
+}
+#skills .item-container .item img {
+  width: 8em;
+  stroke: #ffa500;
+  fill: #ffa500;
+}
+/* CV Page */
+#pdf-viewer {
+  height: 100vh;
+  width: 100vw;
+}
+
+/*<div id="nav_spacer">Test</div>*/
