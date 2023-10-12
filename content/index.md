@@ -105,6 +105,10 @@ font-size:16pt;
   }
 }
 
+
+#experience{
+  overflow: scroll;
+}
 .map-pin{
   fill: #7c776d;
   position: relative;
@@ -124,6 +128,7 @@ font-size:16pt;
   background-color: #ffd078;
   padding: 1em;
   margin:0;
+  display:none;
 }
 
 .map-popover h2,.map-popover p{
@@ -408,6 +413,10 @@ function positionPinDescriptions(){
 
         pin.addEventListener('mouseover', function(event) {
           event.stopPropagation();
+          var rect = pin.getBoundingClientRect(); 
+          // Position the divs above the pins
+          popover.style.left = (rect.left + window.scrollX + 15 - popover.offsetWidth / 2 ) +'px' ;
+          popover.style.top = (rect.top + window.scrollY - popover.offsetHeight - 7 ) +'px';
           
           if (popover.style.display === 'none') {
               popover.style.display = 'block';
