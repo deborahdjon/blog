@@ -159,3 +159,22 @@ for (var i = 0; i < pins.length; i++) {
 }
 
 </script>
+
+
+
+// RM event listener once done 
+function checkScroll() {
+  var triggerElement = document.getElementById('trigger');
+  var animatedElement = document.getElementById('animated-element');
+  
+  var triggerElementPosition = triggerElement.getBoundingClientRect().top + window.scrollY;
+  
+  if (window.scrollY > triggerElementPosition && !animatedElement.classList.contains('animate')) {
+    animatedElement.classList.add('animate');
+    // Remove the event listener after the animation has been triggered
+    window.removeEventListener('scroll', checkScroll);
+  }
+}
+
+// Add the event listener
+window.addEventListener('scroll', checkScroll);

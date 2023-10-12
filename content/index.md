@@ -81,15 +81,6 @@ p{
 font-size:16pt;
 }
 
-#face-svg {
-  stroke-dasharray: 1;
-  stroke-dashoffset: 0;
-  animation-name: dash;
-  animation-duration: 6s;
-  animation-timing-function: ease-out;
-  animation-delay: 0s;
-  animation-iteration-count: 1;
-}
 @keyframes dash {
   0% {
     stroke-dashoffset: 1;
@@ -105,6 +96,15 @@ font-size:16pt;
   }
 }
 
+.animate-line {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 0;
+  animation-name: dash;
+  animation-duration: 6s;
+  animation-timing-function: ease-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+}
 
 #experience{
   overflow: scroll;
@@ -150,7 +150,7 @@ font-size:16pt;
 <defs/>
 <g stroke-linecap="round">
 <path id="face-svg" 
-class="stroke1"
+class="stroke1 animate-line"
 fill="none" 
 stroke-width="4" 
 stroke-opacity="1.00" 
@@ -394,75 +394,134 @@ DISCLAIMER ⚠️ This Website is still in the making.
 
 <script>
 
-function positionPinDescriptions(){
-  let pins = document.getElementsByClassName('map-pin');
-  let popovers = document.getElementsByClassName('map-popover');
 
-  Array.from(pins).forEach(pin => {
 
-      // Get the associated div
-      var divId = pin.id + '-desc';
-      var popover = document.getElementById(divId);
 
-      if (popover) {
-        // // Get the position of the pin
-        // popover.style.position = 'absolute';
-        // var rect = pin.getBoundingClientRect(); 
-        // // Position the divs above the pins
-        // popover.style.left = (rect.left + window.scrollX + 15 - popover.offsetWidth / 2 ) +'px' ;
-        // popover.style.top = (rect.top + window.scrollY - popover.offsetHeight - 7 ) +'px';
+// function positionPopovers(){
+//   console.log('begin positioning---------')
+//   let pins = document.getElementsByClassName('map-pin');  
+//   Array.from(pins).forEach(pin => {
+//       var divId = pin.id + '-desc';
+//       var popover = document.getElementById(divId);
+//       if (popover) {
+//         var rect = pin.getBoundingClientRect(); 
+//         // popover.style.left = (rect.left + window.scrollX + 15 - popover.offsetWidth / 2 ) +'px' ;
+//         // popover.style.top = (rect.top + window.scrollY - popover.offsetHeight - 7 ) +'px';
+//         popover.style.left = (rect.left ) +'px' ;
+//         popover.style.top = (rect.top ) +'px';
+//         console.log('positioned '+pin.id)
+//       }
+//   })
+// }
+let  worldMapAnimationPlayed = false;
 
-        pin.addEventListener('click', function(event) {
-          event.stopPropagation();
-          popover.style.position = 'absolute';
-          var rect = pin.getBoundingClientRect(); 
-          // Position the divs above the pins
-          popover.style.left = (rect.left + window.scrollX + 15 - popover.offsetWidth / 2 ) +'px' ;
-          popover.style.top = (rect.top + window.scrollY - popover.offsetHeight - 7 ) +'px';
-          
-          if (popover.style.display === 'none') {
-              Array.from(popovers).forEach(popover => {
-                popover.style.display = 'none';
-              });
-              popover.style.display = 'block';
-          } else {
-              popover.style.display = 'none';
-          }
-        });
 
-        document.addEventListener('click', function() {
-            popover.style.display = 'none';
-        });
-      }
-  });
+function reachedTriggerDiv(){
+
+  var targetElement = document.getElementById('map-line');
+  var triggerElement = document.getElementById('experience');
+  var rect = triggerElement.getBoundingClientRect();
+  console.log('experience div distance top: '+rect.top)
+  console.log('Window inner height '+ window.innerHeight)
+  if (Math.min(rect.top, window.innerHeight) === rect.top){
+    return true
+  }else{
+    return false
+  }
 }
 
 
+function triggerWorldMapAnimation(){
+  console.log('trigger animation')
+  var targetElement = document.getElementById('map-line');
+  targetElement.classList.add('animate-line')
+  targetElement.classList.add('stroke1');
+  console.log('animation finished')
+}
+
+
+function hideAllPopOvers(){
+    let popovers = document.getElementsByClassName('map-popover');
+    Array.from(popovers).forEach(popover => {
+      hideElement(popover);
+    });
+}
+
+function showElement(element){
+  element.style.display = 'block';
+}
+          
+function hideElement(element){
+  element.style.display = 'none';
+}
+
+function positionPopOverToPin(pin, popover){
+  console.log('\nPositioning popover----------');
+  console.log(popover.offsetHeight)
+  var rect = pin.getBoundingClientRect(); 
+  console.log('Retrived '+pin.id+' at: ')
+  console.log('left: '+rect.left)
+  console.log('top: '+rect.top)
+  popover.style.position = 'absolute';
+  popover.style.left = (rect.left + window.scrollX - popover.offsetWidth/2 + 10) +'px' ; //+window.scrollX + 15 - popover.offsetWidth / 2 
+  popover.style.top = (rect.top + window.scrollY - popover.offsetHeight - 7 ) +'px'; //+ window.scrollY - popover.offsetHeight - 7
+  console.log('positioned '+popover.id+' at: ')
+  console.log('left: '+popover.style.left)
+  console.log('top: '+popover.style.top)
+}
+
+
+// Add event listeners to popover pin click event to position show the according pin
+function addPinClickEventListeners(){
+  let pins = document.getElementsByClassName('map-pin');
+  Array.from(pins).forEach(pin => {
+    var divId = pin.id + '-desc';
+    var popover = document.getElementById(divId);
+
+    pin.addEventListener('click', function(event) {
+      event.stopPropagation();    
+      
+      if (popover.style.display === 'none') {
+          hideAllPopOvers();
+          showElement(popover);
+          positionPopOverToPin(pin, popover);
+      } else {
+          hideElement(popover);
+      }
+    });
+    document.addEventListener('click', function() {
+        popover.style.display = 'none';
+    });
+  });
+}
+function resetWorldMapAnimation(){
+  worldMapAnimationPlayed=false;
+  var targetElement = document.getElementById('map-line');
+  targetElement.classList.remove('animate-line')
+  targetElement.classList.remove('stroke1');
+}
+
+function worldMapAnimation(){
+  if(worldMapAnimationPlayed===false){
+  console.log('animation has not played yet');
+  reachedDiv = reachedTriggerDiv();
+  if(reachedDiv){
+    triggerWorldMapAnimation();
+    worldMapAnimationPlayed=true
+    console.log('animation has played');
+  }
+}
+}
+
 // Use window.onload to call your function when the page loads
 window.onload = function() {
-    positionPinDescriptions();
+  resetWorldMapAnimation();
+  worldMapAnimation();
+  addPinClickEventListeners();
 };
 
 window.onscroll = function() {
-  positionPinDescriptions();
-  var targetElement = document.getElementById('map-line');
-  var triggerElement = document.getElementById('experience');
-
-  var rect = triggerElement.getBoundingClientRect();
-  
-  if (Math.min(rect.top, window.innerHeight) === rect.top  ) {
-    console.log('reached')
-    targetElement.style.strokeDasharray= '1';
-    targetElement.style.strokeDashoffset= '0';
-    targetElement.style.animationDuration= '6s';
-    targetElement.style.animationTimingFunction= 'ease-out';
-    targetElement.style.animationDelay= '0s';
-    targetElement.style.animationIterationCount= '1';
-    targetElement.style.animationName= 'dash';
-    targetElement.classList.add('stroke1');
-  } 
-  
-
+  worldMapAnimation();
 };
 
 
