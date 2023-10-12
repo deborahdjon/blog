@@ -404,15 +404,16 @@ function positionPinDescriptions(){
       var popover = document.getElementById(divId);
 
       if (popover) {
-        // Get the position of the pin
-        popover.style.position = 'absolute';
-        var rect = pin.getBoundingClientRect(); 
-        // Position the divs above the pins
-        popover.style.left = (rect.left + window.scrollX + 15 - popover.offsetWidth / 2 ) +'px' ;
-        popover.style.top = (rect.top + window.scrollY - popover.offsetHeight - 7 ) +'px';
+        // // Get the position of the pin
+        // popover.style.position = 'absolute';
+        // var rect = pin.getBoundingClientRect(); 
+        // // Position the divs above the pins
+        // popover.style.left = (rect.left + window.scrollX + 15 - popover.offsetWidth / 2 ) +'px' ;
+        // popover.style.top = (rect.top + window.scrollY - popover.offsetHeight - 7 ) +'px';
 
         pin.addEventListener('mouseover', function(event) {
           event.stopPropagation();
+          popover.style.position = 'absolute';
           var rect = pin.getBoundingClientRect(); 
           // Position the divs above the pins
           popover.style.left = (rect.left + window.scrollX + 15 - popover.offsetWidth / 2 ) +'px' ;
@@ -439,6 +440,7 @@ window.onload = function() {
 };
 
 window.onscroll = function() {
+  positionPinDescriptions();
   var targetElement = document.getElementById('map-line');
   var triggerElement = document.getElementById('experience');
 
