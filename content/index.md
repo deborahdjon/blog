@@ -396,6 +396,7 @@ DISCLAIMER ⚠️ This Website is still in the making.
 
 function positionPinDescriptions(){
   let pins = document.getElementsByClassName('map-pin');
+  let popovers = document.getElementsByClassName('map-popover');
 
   Array.from(pins).forEach(pin => {
 
@@ -411,7 +412,7 @@ function positionPinDescriptions(){
         // popover.style.left = (rect.left + window.scrollX + 15 - popover.offsetWidth / 2 ) +'px' ;
         // popover.style.top = (rect.top + window.scrollY - popover.offsetHeight - 7 ) +'px';
 
-        pin.addEventListener('mouseover', function(event) {
+        pin.addEventListener('click', function(event) {
           event.stopPropagation();
           popover.style.position = 'absolute';
           var rect = pin.getBoundingClientRect(); 
@@ -420,13 +421,16 @@ function positionPinDescriptions(){
           popover.style.top = (rect.top + window.scrollY - popover.offsetHeight - 7 ) +'px';
           
           if (popover.style.display === 'none') {
+              Array.from(popovers).forEach(popover => {
+                popover.style.display = 'none';
+              });
               popover.style.display = 'block';
           } else {
               popover.style.display = 'none';
           }
         });
 
-        document.addEventListener('mouseout', function() {
+        document.addEventListener('click', function() {
             popover.style.display = 'none';
         });
       }
