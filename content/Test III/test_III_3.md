@@ -4,11 +4,9 @@
 </div>
 
 <script>
-console.log("Hello World")
 var button = document.getElementById('myButton');
 var popover = document.getElementById('myPopover');
-button.addEventListener('click', function(event) {
-    console.log("Hovered over the icon")
+button.addEventListener('mouseover', function(event) {
     event.stopPropagation();
     
     if (popover.style.display === 'none') {
@@ -17,7 +15,7 @@ button.addEventListener('click', function(event) {
         popover.style.display = 'none';
     }
 });
-document.addEventListener('click', function() {
+document.addEventListener('mouseout', function() {
     popover.style.display = 'none';
 });
 </script>
