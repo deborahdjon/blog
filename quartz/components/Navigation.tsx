@@ -9,22 +9,7 @@ export default (() => {
 function Navigation() {
   return(
   <div>
-    <div id="navigation-mobile" class="mobile-only">
-        <nav>
-          {/* Credit: https://codepen.io/sorinbotirla/pen/QyoYgx */}
-          <a href="/">Home</a>
-          <a href="https://djon.info/Projects" >Projects</a>
-          <a href="httos://djon.info/CV" >CV</a>
-          <a href="https://djon.info/Blog">Blog</a>
-          <a href="https://djon.info/About">About</a>
-          <a href="https://djon.info/Blog">Dark Mode</a>
-        </nav>
-      <div class="navicon">
-          <div></div>
-      </div>
-    </div>
-{/*
- <div id="navigation-desktop" class="desktop-only">
+     <div id="navigation-desktop" class="mobile-only">
       <nav id="NavBar-id">
           <ul>
             <li><a href="/">Home</a></li>
@@ -47,7 +32,23 @@ function Navigation() {
           </a>
         </div>
     </div> 
-  */}
+    <div id="navigation-mobile" class="desktop-only">
+        <nav>
+          {/* Credit: https://codepen.io/sorinbotirla/pen/QyoYgx */}
+          <a href="/">Home</a>
+          <a href="https://djon.info/Projects" >Projects</a>
+          <a href="httos://djon.info/CV" >CV</a>
+          <a href="https://djon.info/Blog">Blog</a>
+          <a href="https://djon.info/About">About</a>
+          {/* <a href="https://djon.info/">Dark Mode</a> */}
+        </nav>
+      <div class="navicon">
+          <div></div>
+      </div>
+    </div>
+
+
+ 
   </div>
   );
 }

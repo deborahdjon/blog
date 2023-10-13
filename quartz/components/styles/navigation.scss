@@ -1,48 +1,11 @@
 @use  "../../styles/custom.scss" as *; 
   
-  /*Layout*/
-
-  // body p {
-  //   color: #514e47;
-  // }
-  // body a {
-  //   text-decoration: none;
-  //   color: #514e47;
-  // }
-  // body h1,
-  // body h2,
-  // body h3,
-  // body h4,
-  // body h5 {
-  //   color: #25231f;
-  // }
-  // #page-content {
-  //   display: flex;
-  //   flex-direction: row;
-  //   justify-content: center;
-  //   align-items: flex-start;
-  // }
-  // #page-content .spacer {
-  //   background-color: #fff5e3;
-  //   height: 100%;
-  //   flex: 1;
-  //   width: 20%;
-  // }
-  // #page-content #main-page {
-  //   flex: 3;
-  //   width: 80%;
-  //   background-color: #fff5e3;
-  // }
 
   /* Navigation */
-  #nav_spacer {
-    height: 2em;
-    // background-color: #fff5e3;
-    z-index: 0;
-    position:sticky;
 
-  }
-  #NavBar-id {
+  #navigation-desktop{
+
+  nav {
     z-index: 10;
     background-color: #fff5e3b3;
     justify-content: right;
@@ -58,39 +21,44 @@
     font-family: Gill Sans,Gill Sans MT,Calibri,'Trebuchet MS',sans-serif !important;
     height: 25px;
 
-  }
+    &:ul li {
+      cursor: pointer;
+      // display: inline-block !important; 
+      margin: 0 10px !important; 
+      list-style: none !important;
+      position: relative;
+      
+      /* Line under navigation */
+      &:a {
+        color: #ffa500;
+        // font-weight: var(--bs-body-font-weight)!important;
+        // line-height: var(--bs-body-line-height)!important;
+        &:hover {
+          color: #ffa500 !important;
+        }
+      }
+
+      &::after {
+        content: '';
+        height: 3px;
+        width: 0;
+        background: #ffa500;
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        transition: 0.5s;
+      }
+
+      &::hover::after {
+        width: 100%;
+      }
 
 
-  #NavBar-id ul li {
-    cursor: pointer;
-    display: inline-block !important; 
-    margin: 0 10px !important; 
-    list-style: none !important;
-    position: relative;
-    
-    /* Line under navigation */
+    }
+
   }
-  #NavBar-id ul li a {
-    color: #ffa500;
-    // font-weight: var(--bs-body-font-weight)!important;
-    // line-height: var(--bs-body-line-height)!important;
-  }
-  #NavBar-id ul li a:hover {
-    color: #ffa500 !important;
-  }
-  #NavBar-id ul li::after {
-    content: '';
-    height: 3px;
-    width: 0;
-    background: #ffa500;
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    transition: 0.5s;
-  }
-  #NavBar-id ul li:hover::after {
-    width: 100%;
-  }
+
+  
   /* Deborah Djon Logo */
   #logo {
     z-index: 20;
@@ -116,6 +84,9 @@
   }
 
 
+}
+
+
 
 //Mobile Navigation Credit: https://codepen.io/sorinbotirla/pen/QyoYgx
 // body {
@@ -134,7 +105,7 @@
   $nav-dist-left: calc(100% - 50px);
   $nav-dist-top: 50px;
   width: 100vw;
-  height: 100vh;
+  // height: 100vh;
   top: 0;
   left: 0;
   z-index: 10;
@@ -180,7 +151,7 @@
       user-select: none;
       &:hover { 
         background:  #ffd0788f; 
-        color: $color-accent-dark !important;
+        color: $color-accent-dark ;
       }
     }
   }
