@@ -6,139 +6,41 @@ showToc: false
 .article-title , .content-meta, .graph{
     display: none
 }
-/*Variables*/
-.fill1 {
-  fill: #ffa500;
-}
-.fill2 {
-  fill: #ffd078;
-}
-.fill3 {
-  fill: #7c776d;
-}
-.fillbg {
-  fill: #fff5e3;
-}
-.stroke1 {
-  stroke: #ffa500;
-}
-.stroke2 {
-  stroke: #ffd078;
-}
-.stroke3 {
-  stroke: #7c776d;
-}
-.strokebg {
-  stroke: #fff5e3;
-}
-#skills {
-  /*Recoloring the framework logos*/
-}
-#skills .item-container {
-  padding: 20px;
-  display: flex;
-  justify-content: end;
-}
-#skills .item-container .item {
-  width: 8em;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-}
-#skills .item-container .item svg {
-  max-width: 8em;
-  min-width: 5em;
-  max-height: 8em;
-}
-#skills .item-container .item .tb-desc {
-  min-height: 50px;
-  font-size: 15pt;
-}
-#skills .tb-single {
-  color: #514e47;s
-  font-size: 25pt;
-  text-align: center;
-}
-/* Face */
 
-.stroke1 {
-  stroke: #ffa500;
-}
-
-.h2{
-    font-size: 25pt !important;
-}
-.h3{
-    font-size: 20pt !important;
-}
-
-#geeting{
+/* 
+#greeting{
     padding-right:10px;
+    margin-top: -100px;
+}
+
+#greeting .h2{
+   margin-bottom:55px;
+   margin-right: 10px; 
+}
+
+#description{
+  text-align: justify;
+  margin-bottom: 100px;
 }
 
 p{
 font-size:16pt;
 }
 
-@keyframes dash {
-  0% {
-    stroke-dashoffset: 1;
-  }
-  10% {
-    stroke-dashoffset: 1;
-  }
-  40% {
-    stroke-dashoffset: 0.8;
-  }
-  100% {
-    stroke-dashoffset: 0;
-  }
-}
 
-.animate-line {
-  stroke-dasharray: 1;
-  stroke-dashoffset: 0;
-  animation-name: dash;
-  animation-duration: 6s;
-  animation-timing-function: ease-out;
-  animation-delay: 0s;
-  animation-iteration-count: 1;
-}
 
-#experience{
-  overflow: scroll;
-}
-.map-pin{
-  fill: #7c776d;
-  position: relative;
-}
 
-.map-pin:hover{
-  fill: #ffd078;
-}
-
-.map-popover{
-  position: 'absolute';
-  z-index: 10;
-  width: 10em;
-  height: 10em; 
-  /* border: 2px solid orange; */
-  border-radius: 10px;
-  background-color: #ffd078;
-  padding: 1em;
+.info-card .card-body, .info-card img{
+  width:45%;
+  padding:0;
   margin:0;
-  display:none;
-}
 
-.map-popover h2,.map-popover p{
-  margin:0;
 }
-
 
 .info-box, .info-card, .card{
   background-color: transparent !important;
-}
+} */
+
 
 </style>
 
@@ -176,17 +78,19 @@ DISCLAIMER ⚠️ This Website is still in the making.
     <h2>Projects</h2>
     <div id="projects-info-box" class="info-box">
         <div class="info-box-content">
-            <div class="card info-card">
+            <div class="info-card">
             <a href="https://github.com/deborahdjon/Student_Research_Project_NLP_Movie_Script_Summary">
-                <p class="h3">Bachelor Thesis</p>
-                    <img src="assets/networking.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">Implementing a machine learning library for resource allocation in opticla netowks.</p>
+                <p class="card-title">Bachelor Thesis</p>
+                <div class="card-body">
+                  <img src="assets/networking.jpg" class="card-img-top" alt="...">
+                  <div class="card-text">
+                      <p>Implementing a machine learning library for resource allocation in opticla netowks.</p>
                     </div>
+                </div>
             </a>
             </div>
             <hr class=".stroke1 mobile-only">
-        <div class="card info-card" >
+        <div class="info-card" >
             <a href="https://github.com/deborahdjon/Student_Research_Project_NLP_Movie_Script_Summary">
             <p class="h3">Movie Summary</p>
             <img src="assets/film.jpg" class="card-img-top" alt="...">
@@ -196,7 +100,7 @@ DISCLAIMER ⚠️ This Website is still in the making.
             </a>
         </div>
         <hr class=".stroke1">
-        <div class="card info-card">
+        <div class="info-card">
             <a href="https://github.com/deborahdjon/crazy8sbot">
                 <p class="h3">Crazy8sbot</p>
                 <img src="assets/cards.jpg" class="card-img-top" alt="...">
@@ -345,6 +249,7 @@ DISCLAIMER ⚠️ This Website is still in the making.
     </g>  
   </svg>
 
+<p><a href="/Projects/">Full CV →</a></p>
 
 </div>
 
@@ -413,31 +318,6 @@ DISCLAIMER ⚠️ This Website is still in the making.
 //       }
 //   })
 // }
-let  worldMapAnimationPlayed = false;
-
-
-function reachedTriggerDiv(){
-
-  var targetElement = document.getElementById('map-line');
-  var triggerElement = document.getElementById('experience');
-  var rect = triggerElement.getBoundingClientRect();
-  console.log('experience div distance top: '+rect.top)
-  console.log('Window inner height '+ window.innerHeight)
-  if (Math.min(rect.top, window.innerHeight) === rect.top){
-    return true
-  }else{
-    return false
-  }
-}
-
-
-function triggerWorldMapAnimation(){
-  console.log('trigger animation')
-  var targetElement = document.getElementById('map-line');
-  targetElement.classList.add('animate-line')
-  targetElement.classList.add('stroke1');
-  console.log('animation finished')
-}
 
 
 function hideAllPopOvers(){
@@ -470,7 +350,6 @@ function positionPopOverToPin(pin, popover){
   console.log('top: '+popover.style.top)
 }
 
-
 // Add event listeners to popover pin click event to position show the according pin
 function addPinClickEventListeners(){
   let pins = document.getElementsByClassName('map-pin');
@@ -494,35 +373,55 @@ function addPinClickEventListeners(){
     });
   });
 }
+
 function resetWorldMapAnimation(){
-  worldMapAnimationPlayed=false;
   var targetElement = document.getElementById('map-line');
   targetElement.classList.remove('animate-line')
   targetElement.classList.remove('stroke1');
+  window.removeEventListener('scroll', checkScroll);
 }
 
-function worldMapAnimation(){
-  if(worldMapAnimationPlayed===false){
-  console.log('animation has not played yet');
-  reachedDiv = reachedTriggerDiv();
-  if(reachedDiv){
-    triggerWorldMapAnimation();
-    worldMapAnimationPlayed=true
-    console.log('animation has played');
+function triggerWorldMapAnimation(){
+  console.log('trigger animation')
+  var targetElement = document.getElementById('map-line');
+  targetElement.classList.add('animate-line')
+  targetElement.classList.add('stroke1');
+  console.log('animation finished')
+}
+
+function reachedTriggerDiv(){
+  var targetElement = document.getElementById('map-line');
+  var triggerElement = document.getElementById('experience');
+  var rect = triggerElement.getBoundingClientRect();
+  console.log('experience div distance top: '+rect.top)
+  console.log('Window inner height '+ window.innerHeight)
+  if (Math.min(rect.top, window.innerHeight) === rect.top){
+    return true
+  }else{
+    return false
   }
 }
+
+
+function checkScroll() {
+  console.log('animation has not played yet');
+  if (reachedTriggerDiv()) {
+    triggerWorldMapAnimation();
+    console.log('animation has played');
+    // Remove the event listener after the animation has been triggered
+    window.removeEventListener('scroll', checkScroll);
+  }
 }
 
 // Use window.onload to call your function when the page loads
 window.onload = function() {
-  resetWorldMapAnimation();
-  worldMapAnimation();
   addPinClickEventListeners();
+  resetWorldMapAnimation();
+  window.addEventListener('scroll', checkScroll);
+  checkScroll()
 };
 
-window.onscroll = function() {
-  worldMapAnimation();
-};
+
 
 
 </script>

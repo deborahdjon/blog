@@ -1,7 +1,11 @@
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
-    
   }
+
+nav breadcrumb-container{
+  display:  none !important;
+}
+
 /*Variables*/
 .fill1 {
   fill: #ffa500;
@@ -178,14 +182,13 @@ nav ul li:hover::after {
   top: 0;
   left: 0;
   text-align: center;
-  background-color: #fff5e3;
+  background-color: transparent; // #fff5e3;
   height: 300pt;
   margin-bottom: -15px;
   padding: 0;
 }
-#face-svg {
-  stroke: "#ffa500";
 
+.animate-line {
   stroke-dasharray: 1;
   stroke-dashoffset: 0;
   animation-name: dash;
@@ -219,8 +222,11 @@ nav ul li:hover::after {
   flex-direction: row;
   justify-content: center;
   align-items: flex-end;
+  padding-right:10px;
+  margin-top: -100px;
 }
-#greeting p {
+
+#greeting .h2 {
   font-size: 30pt;
   line-height: 0%;
 }
@@ -230,7 +236,7 @@ nav ul li:hover::after {
   margin-top: 20pt;
 }
 #description {
-  text-align: center;
+  text-align: justify;
 }
 .text-accent {
   color: #ffa500;
@@ -244,38 +250,51 @@ nav ul li:hover::after {
   padding: 5px 10px 5px 10px;
   margin-top: 0;
   margin-bottom: 10px;
-  background-color: #fff5e3;
+  background-color: transparent; // #fff5e3;
   font-size: 12pt;
   text-align: center;
   display: flex;
   flex-direction: column;
 }
+
 .info-box .info-box-content {
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
 }
-.info-box .info-box-content .card {
-  margin: 1%;
-  overflow: hidden;
-  border-width: 4px;
-  border-color: #ffa500;
-  border-radius: 10px;
-  width: 250px;
-  height: 20em;
-  background-color: #fff5e3;
+
+.card-body{
+ display:flex !important;
+ flex-direction: row;
 }
-.info-box .info-box-content .card:hover,
-.info-box .info-box-content .card a {
-  border-color: #514e47;
+
+.card-text, .card-body img{
+  width: 45%;
 }
-.info-box .info-box-content .card img {
-  object-fit: cover;
-  height: 40%;
-  width: 400px;
-  align-self: center;
-}
+
+// .info-box .info-box-content .card {
+//   margin: 1%;
+//   overflow: hidden;
+//   border-width: 4px;
+//   border-color: #ffa500;
+//   border-radius: 10px;
+//   width: 250px;
+//   height: 20em;
+//   background-color: transparent; // #fff5e3;
+// }
+// .info-box .info-box-content .card:hover,
+// .info-box .info-box-content .card a {
+//   border-color: #514e47;
+// }
+// .info-box .info-box-content .card img {
+//   object-fit: cover;
+//   height: 40%;
+//   width: 400px;
+//   align-self: center;
+// }
+
+
 .more {
   text-align: right;
   padding: 3%;
@@ -323,6 +342,41 @@ nav ul li:hover::after {
 #pdf-viewer {
   height: 100vh;
   width: 100vw;
+}
+
+#experience{
+  overflow: scroll;
+}
+.map-pin{
+  fill: #7c776d;
+  position: relative;
+}
+
+.map-pin:hover{
+  fill: #ffd078;
+}
+
+.map-popover{
+  position: 'absolute';
+  z-index: 10;
+  width: 10em;
+  height: 10em; 
+  /* border: 2px solid orange; */
+  border-radius: 10px;
+  background-color: #ffd078;
+  padding: 1em;
+  margin:0;
+  display:none;
+}
+
+.map-popover h2,.map-popover p{
+  margin:0;
+}
+.info-card{
+  display: flex;
+  width: 600px;
+  justify-content: row;
+  text-align: left;
 }
 
 /*<div id="nav_spacer">Test</div>*/

@@ -153,8 +153,15 @@ document.addEventListener("nav", async (e: unknown) => {
   }
 
   function trimContent(content: string) {
-    // works without escaping html like in `description.ts`
-    const sentences = content.replace(/\s+/g, " ").split(".")
+    var pattern = /(<\/?[^>]+>)|(\bfunction\s+\w+\s*\([^)]*\)\s*{[^}]*})|(\.[\w-]+\s*{[^}]*})/g;
+    // works without escaping html like in `description.ts` //fix: added the second replace to clean out html
+    const sentences = content.replace(/\s+/g, " ").replace(pattern, " ").split(".")
+    
+
+
+
+
+    
     let finalDesc = ""
     let sentenceIdx = 0
 

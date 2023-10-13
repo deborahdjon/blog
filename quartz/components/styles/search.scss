@@ -24,10 +24,11 @@
     align-items: center;
     cursor: pointer;
     white-space: nowrap;
+    position: fixed;
+    right: 20px;
 
     & > div {
       flex-grow: 1;
-      
     }
 
     & > p {
