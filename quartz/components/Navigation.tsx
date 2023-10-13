@@ -8,16 +8,15 @@ export default (() => {
   
 function Navigation() {
   return(
-  <div id="website-header">
-
-  <nav id="NavBar-id">
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="Projects" >Projects</a></li>
-        <li><a href="/CV" >CV</a></li>
-        <li><a href="/Blog/Welcome">Blog</a></li>
-    </ul>
-  </nav>
+  <div id="navigation-desktop" class="desktop-only">
+    <nav id="NavBar-id">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="https://djon.info/Projects" >Projects</a></li>
+          <li><a href="httos://djon.info/CV" >CV</a></li>
+          <li><a href="https://djon.info/Blog">Blog</a></li>
+      </ul>
+    </nav>
       <div id="logo" class="line-container">
         <a href="https://djon.info/about/">
           <svg  viewBox="0.00 0.00 400.00 200.00">
