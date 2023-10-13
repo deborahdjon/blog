@@ -207,13 +207,13 @@
     
   .navicon {
     $nav-icon-width: 20px;
-    width: $nav-icon-width;
-    height: $nav-icon-width;
+    // width: $nav-icon-width;
+    // height: $nav-icon-width;
     top: calc($nav-dist-top - $nav-icon-width/2);
     left: calc($nav-dist-left - $nav-icon-width/2);
     padding: 0;
     margin: 0;
-    z-index: 11;
+    z-index: 10;
     position: fixed;
 
     // cursor: pointer;

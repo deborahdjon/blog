@@ -17,7 +17,7 @@ function Navigation() {
           <a href="httos://djon.info/CV" >CV</a>
           <a href="https://djon.info/Blog">Blog</a>
           <a href="https://djon.info/About">About</a>
-          {/* <a href="https://djon.info/Blog">Dark Mode</a> */}
+          <a href="https://djon.info/Blog">Dark Mode</a>
         </nav>
       <div class="navicon">
           <div></div>
