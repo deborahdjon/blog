@@ -1,4 +1,4 @@
-
+@use  "../../styles/custom.scss" as *; 
   
   /*Layout*/
 
@@ -114,3 +114,106 @@
   #logo:hover svg path {
     stroke: #514e47;
   }
+
+
+
+//Mobile Navigation Credit: https://codepen.io/sorinbotirla/pen/QyoYgx
+// body {
+//   font: 100% Roboto, sans-serif;
+//   background: url(http://wallpapercave.com/wp/aZlqiAT.png) 50% 50% no-repeat;
+//   background-size: cover;
+//   padding: 50px;
+//   margin: 0;
+// }
+
+#navigation-mobile{
+  position: absolute;
+  display: flex;
+  // flex-direction: column;
+  // align-content: center !important;
+
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  nav {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    top: initial;
+    left: initial;
+    padding: 0;
+    background: rgba(255, 255, 255, 0.85);
+    flex-direction: column;
+    // -webkit-clip-path: circle(24px at calc(100% - 80px) 50px);
+    //  clip-path: circle(24px at calc(100% - 80px) 50px);
+    -webkit-transition: -webkit-clip-path 0.5625s, clip-path 0.375s;
+    transition: -webkit-clip-path 0.5625s, clip-path 0.375s;
+    text-align: center;
+    a{
+      width: 100%;
+    }
+  }
+
+  
+  // nav:hover {
+  //   -webkit-transition-timing-function: ease-out;
+  //   transition-timing-function: ease-out;
+  //   -webkit-transition-duration: 0.75s;
+  //   transition-duration: 0.75s;
+  //   -webkit-clip-path: circle(390px at 225px 24px);
+  //   clip-path: circle(390px at 150px 24px);
+  // }
+  
+  a {
+    display: block;
+    line-height: 50px;
+    padding: 0 20px;
+    color: inherit;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  a:hover { background: $color-accent-light; }
+  
+  // a:active { background: $color-accent-dark; }
+  
+  .navicon {
+    margin-top: -15;
+    margin-left: 1;
+
+    cursor: pointer;
+    -webkit-transform-origin: 32px 24px;
+    -ms-transform-origin: 32px 24px;
+    transform-origin: 32px 24px;
+  }
+  
+  .navicon div {
+    position: relative;
+    width: 20px;
+    height: 2px;
+    left:80px;
+    top:50px;
+    background: rgba(0, 0, 0, 0.87);
+
+    .navicon div:before,
+    .navicon div:after {
+      display: block;
+      content: "";
+      position: absolute;
+    }
+  }
+  
+  .navicon div:before { top: -7px; }
+  
+  .navicon div:after { top: 7px; }  
+}
