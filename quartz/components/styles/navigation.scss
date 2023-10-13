@@ -131,7 +131,8 @@
   display: flex;
   // flex-direction: column;
   // align-content: center !important;
-
+  $nav-dist-left: calc(100% - 50px);
+  $nav-dist-top: 50px;
   width: 100vw;
   height: 100vh;
   top: 0;
@@ -139,25 +140,48 @@
   z-index: 10;
 
   nav {
-    width: 100vw;
-    height: 100vh;
+    background: rgba(255, 255, 255, 0.95);
+
+    width: 100%;
+    height: 100%;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
+    justify-items: center;
+    text-align: center;
 
     top: initial;
     left: initial;
     padding: 0;
-    background: rgba(255, 255, 255, 0.85);
-    flex-direction: column;
-    // -webkit-clip-path: circle(24px at calc(100% - 80px) 50px);
-    //  clip-path: circle(24px at calc(100% - 80px) 50px);
+    -webkit-clip-path: circle(24px at $nav-dist-left $nav-dist-top);
+    clip-path: circle(24px at $nav-dist-left $nav-dist-top);
     -webkit-transition: -webkit-clip-path 0.5625s, clip-path 0.375s;
     transition: -webkit-clip-path 0.5625s, clip-path 0.375s;
-    text-align: center;
-    a{
+      &:hover {
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+        -webkit-transition-duration: 0.75s;
+        transition-duration: 0.75s;
+        $nav-radius: 60vh;
+        -webkit-clip-path: circle(calc($nav-radius*2 )at calc($nav-dist-left ) calc($nav-dist-top ));
+        clip-path: circle(calc($nav-radius*2 )at calc($nav-dist-left ) calc($nav-dist-top));
+      }
+    a {
       width: 100%;
+      display: block;
+      line-height: 50px;
+      padding: 0 20px;
+      color: inherit;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      &:hover { 
+        background:  #ffd0788f; 
+        color: $color-accent-dark !important;
+      }
     }
   }
 
@@ -171,49 +195,56 @@
   //   clip-path: circle(390px at 150px 24px);
   // }
   
-  a {
-    display: block;
-    line-height: 50px;
-    padding: 0 20px;
-    color: inherit;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-
-  a:hover { background: $color-accent-light; }
+  // .navicon:hover {
+  //   -webkit-transition-timing-function: ease-out;
+  //   transition-timing-function: ease-out;
+  //   -webkit-transition-duration: 0.75s;
+  //   transition-duration: 0.75s;
+  //   -webkit-clip-path: circle(390px at 225px 24px);
+  //   clip-path: circle(390px at 150px 24px);
+  // }
   
-  // a:active { background: $color-accent-dark; }
-  
+    
   .navicon {
-    margin-top: -15;
-    margin-left: 1;
+    $nav-icon-width: 20px;
+    width: $nav-icon-width;
+    height: $nav-icon-width;
+    top: calc($nav-dist-top - $nav-icon-width/2);
+    left: calc($nav-dist-left - $nav-icon-width/2);
+    padding: 0;
+    margin: 0;
+    z-index: 11;
+    position: fixed;
 
-    cursor: pointer;
-    -webkit-transform-origin: 32px 24px;
-    -ms-transform-origin: 32px 24px;
-    transform-origin: 32px 24px;
-  }
-  
-  .navicon div {
-    position: relative;
-    width: 20px;
-    height: 2px;
-    left:80px;
-    top:50px;
-    background: rgba(0, 0, 0, 0.87);
+    // cursor: pointer;
+    // -webkit-transform-origin: 32px 24px;
+    // -ms-transform-origin: 32px 24px;
+    // transform-origin: 32px 24px;
+    div{
+      $navicon-elem-offset: 7px;
+      position: relative;
+      width: $nav-icon-width;
+      height: 2px;
+      background: rgba(0, 0, 0, 0.87);
+      top:$navicon-elem-offset ;
 
-    .navicon div:before,
-    .navicon div:after {
-      display: block;
-      content: "";
-      position: absolute;
+      &:before, &:after{
+        width: $nav-icon-width;
+        height: 2px;
+        background: rgba(0, 0, 0, 0.87);
+        display: block;
+        content: "";
+        position: absolute;
+      }
+      &:before{
+        top: - $navicon-elem-offset;
+      }
+      &:after{
+        top:$navicon-elem-offset;
+      }
     }
+    
   }
-  
-  .navicon div:before { top: -7px; }
-  
-  .navicon div:after { top: 7px; }  
+ 
+
 }

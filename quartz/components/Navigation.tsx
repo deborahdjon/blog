@@ -9,8 +9,7 @@ export default (() => {
 function Navigation() {
   return(
   <div>
-    <div id="navigation-mobile" class="">
-      <div>
+    <div id="navigation-mobile" class="mobile-only">
         <nav>
           {/* Credit: https://codepen.io/sorinbotirla/pen/QyoYgx */}
           <a href="/">Home</a>
@@ -20,9 +19,8 @@ function Navigation() {
           <a href="https://djon.info/About">About</a>
           {/* <a href="https://djon.info/Blog">Dark Mode</a> */}
         </nav>
-      </div>
       <div class="navicon">
-          <div>Hello</div>
+          <div></div>
       </div>
     </div>
 {/*
