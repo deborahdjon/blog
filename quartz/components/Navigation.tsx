@@ -9,7 +9,7 @@ export default (() => {
 function Navigation() {
   return(
   <div>
-     <div id="navigation-desktop" class="mobile-only">
+     <div id="navigation-desktop" class="desktop-only">
       <nav id="NavBar-id">
           <ul>
             <li><a href="/">Home</a></li>
