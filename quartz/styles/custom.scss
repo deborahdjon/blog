@@ -110,79 +110,79 @@ body h5 {
   height: 100px;
   background-color: #ffa500;
 }
-/* Navigation */
-.nav_spacer {
-  height: 50px;
+// /* Navigation */
+// .nav_spacer {
+//   height: 50px;
 
-  background-color: #fff5e3;
-  /* background-color: #dd9614; */
-}
-nav {
-  z-index: 10;
-  background-color: #fff5e3b3;
-  justify-content: right;
-  align-items: center;
-  width: 100%;
-  padding: 20px;
-  font-size: 14pt;
-  display: flex;
-  position: fixed;
-  top: 0;
-  right: 0;
-  align-items: center!important;
-  font-family: Gill Sans,Gill Sans MT,Calibri,'Trebuchet MS',sans-serif !important;
-  height: 25px;
+//   background-color: #fff5e3;
+//   /* background-color: #dd9614; */
+// }
+// nav {
+//   z-index: 10;
+//   background-color: #fff5e3b3;
+//   justify-content: right;
+//   align-items: center;
+//   width: 100%;
+//   padding: 20px;
+//   font-size: 14pt;
+//   display: flex;
+//   position: fixed;
+//   top: 0;
+//   right: 0;
+//   align-items: center!important;
+//   font-family: Gill Sans,Gill Sans MT,Calibri,'Trebuchet MS',sans-serif !important;
+//   height: 25px;
 
   
-}
-nav ul li {
-  cursor: pointer;
-  display: inline-block;
-  margin: 0 10px;
-  color: #ffa500;
-  list-style: none;
-  position: relative;
-  /* Line under navigation */
-}
-nav ul li a {
-  color: #ffa500;
-}
-nav ul li::after {
-  content: '';
-  height: 3px;
-  width: 0;
-  background: #ffa500;
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  transition: 0.5s;
-}
-nav ul li:hover::after {
-  width: 100%;
-}
-/* Deborah Djon Logo */
-#logo {
-  z-index: 20;
-  position: fixed;
-  top: 10px;
-  left: 10px;
-}
-#logo svg {
-  height: 5em;
-  cursor: pointer;
-}
-#logo svg path {
-  height: 4em;
-  cursor: pointer;
-  stroke: #ffa500;
-  stroke-width: 10px;
-  stroke-linecap: round;
-  fill: none;
-  stroke-linejoin: "round";
-}
-#logo:hover svg path {
-  stroke: #514e47;
-}
+// }
+// nav ul li {
+//   cursor: pointer;
+//   display: inline-block;
+//   margin: 0 10px;
+//   color: #ffa500;
+//   list-style: none;
+//   position: relative;
+//   /* Line under navigation */
+// }
+// nav ul li a {
+//   color: #ffa500;
+// }
+// nav ul li::after {
+//   content: '';
+//   height: 3px;
+//   width: 0;
+//   background: #ffa500;
+//   position: absolute;
+//   left: 0;
+//   bottom: -5px;
+//   transition: 0.5s;
+// }
+// nav ul li:hover::after {
+//   width: 100%;
+// }
+// /* Deborah Djon Logo */
+// #logo {
+//   z-index: 20;
+//   position: fixed;
+//   top: 10px;
+//   left: 10px;
+// }
+// #logo svg {
+//   height: 5em;
+//   cursor: pointer;
+// }
+// #logo svg path {
+//   height: 4em;
+//   cursor: pointer;
+//   stroke: #ffa500;
+//   stroke-width: 10px;
+//   stroke-linecap: round;
+//   fill: none;
+//   stroke-linejoin: "round";
+// }
+// #logo:hover svg path {
+//   stroke: #514e47;
+// }
 /* -- Home Page --*/
 /* Face */
 #face-svg-container {

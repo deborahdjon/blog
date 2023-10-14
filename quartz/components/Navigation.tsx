@@ -9,7 +9,7 @@ export default (() => {
 function Navigation() {
   return(
   <div>
-     <div id="navigation-desktop" class="desktop-only">
+     <div id="navigation-desktop" >
       <nav id="NavBar-id">
           <ul>
             <li><a href="/">Home</a></li>
@@ -32,7 +32,7 @@ function Navigation() {
           </a>
         </div>
     </div> 
-    <div id="navigation-mobile" class="desktop-only">
+    <div id="navigation-mobile" >
         <nav>
           {/* Credit: https://codepen.io/sorinbotirla/pen/QyoYgx */}
           <a href="/">Home</a>
