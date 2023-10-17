@@ -12,9 +12,9 @@ function Navigation() {
       <nav id="NavBar-id">
           <ul>
             <li><a href="/">Home</a></li>
-            <li><a href="https://djon.info/Projects" >Projects</a></li>
-            <li><a href="httos://djon.info/CV" >CV</a></li>
-            <li><a href="https://djon.info/Blog">Blog</a></li>
+            <li><a href="https://djon.info/Projects/" >Projects</a></li>
+            <li><a href="https://djon.info/CV/" >CV</a></li>
+            <li><a href="https://djon.info/Blog/">Blog</a></li>
         </ul>
       </nav>
         <div id="logo" class="line-container">
@@ -35,11 +35,10 @@ function Navigation() {
         <nav>
           {/* Credit: https://codepen.io/sorinbotirla/pen/QyoYgx */}
           <a href="/">Home</a>
-          <a href="https://djon.info/Projects" >Projects</a>
-          <a href="httos://djon.info/CV" >CV</a>
-          <a href="https://djon.info/Blog">Blog</a>
-          <a href="https://djon.info/About">About</a>
-          {/* <a href="https://djon.info/">Dark Mode</a> */}
+          <a href="https://djon.info/Projects/" >Projects</a>
+          <a href="httos://djon.info/CV/" >CV</a>
+          <a href="https://djon.info/Blog/">Blog</a>
+          <a href="https://djon.info/About/">About</a>
         </nav>
       <div id="mobile-nav-toggler">
         <div class="navicon">

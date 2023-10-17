@@ -28,18 +28,18 @@ const config: QuartzConfig = {
           secondary: "#ffa500",
           tertiary: "#ffd078",
           highlight: "#fff5e3b3",
-          lighttransparent: " #fff5e3a6"
+          lighttransparent: " #fff5e3d6"
         },
         darkMode: {
-          light: "#181716",
+          light: "#2a2826",
           lightgray: "#393836",
           gray: "#646464",
-          darkgray: "#d4d4d4",
+          darkgray: "#e8ded3",
           dark: "#ececeb",
-          secondary: "#ffd078",
-          tertiary: "#ffd078",
+          secondary: "#e97c00",
+          tertiary: "#e9a85e",
           highlight: "#a9a18f26",
-          lighttransparent: "#181716b2"
+          lighttransparent: "#2a2826d8"
         },
       },
     },

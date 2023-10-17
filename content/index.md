@@ -42,12 +42,13 @@ font-size:16pt;
 } */
 
 
+
 </style>
 
 
 
 <div id="greeting">
-<p class="h2">Hi, I'm <p>
+<p class="h1">Hi, I'm <p>
 <svg width="220" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 357 712" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs/>
 <g stroke-linecap="round">
@@ -75,48 +76,46 @@ DISCLAIMER ⚠️ This Website is still in the making.
 
 
 <div id="projects">
-    <h2>Projects</h2>
+    <p class="h2 center-text">Projects<p>
     <div id="projects-info-box" class="info-box">
         <div class="info-box-content">
             <div class="info-card">
-            <a href="https://github.com/deborahdjon/Student_Research_Project_NLP_Movie_Script_Summary">
-                <p class="card-title">Bachelor Thesis</p>
-                <div class="card-body">
-                  <img src="assets/networking.jpg" class="card-img-top" alt="...">
-                  <div class="card-text">
-                      <p>Implementing a machine learning library for resource allocation in opticla netowks.</p>
-                    </div>
-                </div>
-            </a>
+              <a href="https://github.com/deborahdjon/Student_Research_Project_NLP_Movie_Script_Summary">
+                  <p class="h3 center-text">Bachelor Thesis</p>
+                  <div class="card-body">
+                    <img src="assets/networking.jpg" class="card-img-top" alt="...">
+                      <p class="card-text">Implementing a machine learning library for resource allocation in opticla netowks. Implementing a machine learning library for resource allocation in opticla netowks. Implementing a machine learning library for resource allocation in opticla netowks.</p>
+                  </div>
+              </a>
             </div>
             <hr class=".stroke1 mobile-only">
         <div class="info-card" >
             <a href="https://github.com/deborahdjon/Student_Research_Project_NLP_Movie_Script_Summary">
-            <p class="h3">Movie Summary</p>
-            <img src="assets/film.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
+              <p class="h3 center-text">Movie Summary</p>
+              <div class="card-body">
+                <img src="assets/film.jpg" class="card-img-top" alt="...">
                 <p class="card-text">Analysing movie scripts to create content-based movie summary.</p>
-            </div>
+              </div>
             </a>
         </div>
         <hr class=".stroke1">
         <div class="info-card">
             <a href="https://github.com/deborahdjon/crazy8sbot">
-                <p class="h3">Crazy8sbot</p>
-                <img src="assets/cards.jpg" class="card-img-top" alt="...">
+                <p class="h3 center-text">Crazy8sbot</p>
                 <div class="card-body">
-                    <p class="card-text">Python Telegrambot for playing crazy eight's in a group chat.</p>
+                  <img src="assets/cards.jpg" class="card-img-top" alt="...">
+                  <p class="card-text">Python Telegrambot for playing crazy eight's in a group chat.</p>
                 </div>
             </a>
         </div>
 </div>
-<div class="more">
-<p><a href="/Projects/">More →</a></p>
+<div class=>
+<p class="more-info-link"><a href="https://djon.info/Projects/">More →</a></p>
 </div>
 </div>
 <div id="skills">
+  <p class="h2 center-text"> Toolbox </p>
     <div id="skills-info-box" class="info-box" >
-    <h1>Toolbox</h1>
     <!--Pyhon-->
     <divc class="item-container">
         <div class="item">
@@ -140,7 +139,7 @@ DISCLAIMER ⚠️ This Website is still in the making.
         </div>
         <!--Beautiful Soup-->
         <div class="item">
-        <h1 class="tb-single">Beautiful<br>Soup</h1>
+        <p class="tb-single h1">Beautiful<br>Soup</p>
         <p class="tb-desc"></p>
         </div>
         <!--Spacy-->
@@ -216,7 +215,7 @@ DISCLAIMER ⚠️ This Website is still in the making.
 
 
 <div id="experience">
-  <p class="h2">Experience</p>
+  <p class="h2 center-text">Experience</p>
   <svg width="800" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="250 260 600 290" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
     <g id="Layer-3" vectornator:layerName="Layer 3">
     <path id="map-line" 
@@ -249,48 +248,48 @@ DISCLAIMER ⚠️ This Website is still in the making.
     </g>  
   </svg>
 
-<p><a href="/Projects/">Full CV →</a></p>
+<p class="more-info-link"><a href="https://djon.info/CV">Full CV →</a></p>
 
 </div>
 
 <div class="map-popover" id="pin-dallas-desc">
-  <h2>Test</h2>
+  <p class="h3">Test</p>
   <p>I am describing a test</p>
 </div>
 
 <div class="map-popover" id="pin-dublin-desc">
-  <h2>Test</h2>
+  <p class="h3">Test</p>
   <p>I am describing a test</p>
 </div>
 
 <div class="map-popover" id="pin-belfast-desc">
-  <h2>Test</h2>
+  <p class="h3">Test</p>
   <p>I am describing a test</p>
 </div>
 
 <div class="map-popover" id="pin-stuttgart-desc">
-  <h2>Test</h2>
+  <p class="h2">Test</p>
   <p>I am describing a test</p>
 </div>
 
 <div class="map-popover" id="pin-paris-desc">
-  <h2>Test</h2>
+  <p class="h3">Test</p>
   <p>I am describing a test</p>
 </div>
 
 
 <div class="map-popover" id="pin-vietnam-desc">
-  <h2>Test</h2>
+  <p class="h3">Test</p>
   <p>I am describing a test</p>
 </div>
 
 <div class="map-popover" id="pin-ottawa-desc">
-  <h2>Test</h2>
+  <p class="h3">Test</p>
   <p>I am describing a test</p>
 </div>
 
 <div class="map-popover" id="pin-hester-desc">
-  <h2>Test</h2>
+  <p class="h3">Test</p>
   <p>I am describing a test</p>
 </div>
 
@@ -413,8 +412,71 @@ function checkScroll() {
   }
 }
 
+
+
+
+const setSeabornSVG = async() =>{
+    const html = await fetch('/assets/seaborn.svg').then((data) => data.text());
+    let sb_container = document.getElementById('seaborn-svg');
+    sb_container.innerHTML = html
+    
+    let svg =  sb_container.querySelector('svg');
+    let paths = svg.querySelectorAll('path');
+
+    let p_tag = document.createElement('p');
+    p_tag.textContent = 'Seaborn'
+    p_tag.classList.add('tb-desc');
+    sb_container.appendChild(p_tag);
+
+    // ???
+    svg.getElementById('PathCollection_1').querySelectorAll('path').forEach(element =>{
+        element.removeAttribute('style')
+        element.setAttribute('class', 'fill1')
+    })
+
+    // Top wave
+    svg.getElementById('PolyCollection_2').querySelectorAll('path').forEach(element =>{
+        element.removeAttribute('style')
+        element.setAttribute('class', 'fill2')
+    })
+
+
+    // Bottom wave
+    svg.getElementById('PolyCollection_1').querySelectorAll('path').forEach(element =>{
+        element.removeAttribute('style')
+        element.setAttribute('class', 'fillbg')
+    })
+    
+    // smaller cicle around everything
+    svg.getElementById('patch_2').querySelectorAll('path').forEach(element =>{
+        element.removeAttribute('style')
+        element.setAttribute('class', 'fillbg strokebg')    
+    })
+
+    // Cicle around everything
+    svg.getElementById('patch_3').querySelectorAll('path').forEach(element =>{
+        element.removeAttribute('style')
+        element.setAttribute('class', 'fill3 stroke3')    
+    })
+
+    // Histogram bars 
+    array = [4,5,6,7,8,9,10,11,12]
+    array.forEach(elem => {
+        svg.getElementById('patch_'+String(elem)).querySelectorAll('path').forEach(element =>{
+            element.removeAttribute('style')
+            element.setAttribute('class', 'fill3 strokebg')    
+        })
+    });
+
+}
+
+
+
+
+
 // Use window.onload to call your function when the page loads
 window.onload = function() {
+  setSeabornSVG();
   addPinClickEventListeners();
   resetWorldMapAnimation();
   window.addEventListener('scroll', checkScroll);
