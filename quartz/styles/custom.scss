@@ -63,7 +63,7 @@ $color-background: #fff5e3;
   font-size: 15pt;
 }
 #skills .tb-single {
-  color: #514e47;
+  color: var(--dark);
   font-size: 25pt;
   text-align: center;
 }
@@ -71,16 +71,16 @@ $color-background: #fff5e3;
 body {
   height: 100vh;
   margin: 0;
-  background-color: #fff5e3;
+  // background-color: #fff5e3;
   z-index: 0;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 body p {
-  color: #514e47;
+  color: var(--dark);
 }
 body a {
   text-decoration: none;
-  color: #514e47;
+  color: var(--dark);
 }
 body h1,
 body h2,
@@ -181,7 +181,7 @@ body h5 {
 //   stroke-linejoin: "round";
 // }
 // #logo:hover svg path {
-//   stroke: #514e47;
+//   stroke: var(--dark);
 // }
 /* -- Home Page --*/
 /* Face */
@@ -278,6 +278,7 @@ body h5 {
 
 .card-text, .card-body img{
   width: 45%;
+  padding: 20px;
 }
 
 // .info-box .info-box-content .card {
@@ -292,7 +293,7 @@ body h5 {
 // }
 // .info-box .info-box-content .card:hover,
 // .info-box .info-box-content .card a {
-//   border-color: #514e47;
+//   border-color: var(--dark);
 // }
 // .info-box .info-box-content .card img {
 //   object-fit: cover;
@@ -360,7 +361,7 @@ body h5 {
 }
 
 .map-pin:hover{
-  fill: #ffd078;
+  fill:var(--tertiary);
 }
 
 .map-popover{
@@ -370,7 +371,7 @@ body h5 {
   height: 10em; 
   /* border: 2px solid orange; */
   border-radius: 10px;
-  background-color: #ffd078;
+  background-color: var(--tertiary);
   padding: 1em;
   margin:0;
   display:none;

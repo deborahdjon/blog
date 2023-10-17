@@ -24,8 +24,7 @@ function toggleExplorer(this: HTMLElement) {
 }
 
 function toggleFolder(evt: MouseEvent) {
-  evt.stopPropagation()
-
+  evt.stopPropagation();
   // Element that was clicked
   const target = evt.target as HTMLElement
 
@@ -69,10 +68,10 @@ function toggleFolder(evt: MouseEvent) {
 
 function setupExplorer() {
   // Set click handler for collapsing entire explorer
-  const explorer = document.getElementById("explorer")
+  const explorer = document.getElementById("explorer");
 
   // Get folder state from local storage
-  const storageTree = localStorage.getItem("fileTree")
+  const storageTree = localStorage.getItem("fileTree");
 
   // Convert to bool
   const useSavedFolderState = explorer?.dataset.savestate === "true"

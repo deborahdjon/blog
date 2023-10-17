@@ -1,7 +1,6 @@
 import { QuartzComponentConstructor, QuartzComponentProps } from "./types"
-import style from "./styles/navigation.scss"
-
-
+import navigationStyle from "./styles/navigation.scss"
+import navigationScript from "./scripts/navigation.inline"
 
 
 export default (() => {
@@ -42,8 +41,10 @@ function Navigation() {
           <a href="https://djon.info/About">About</a>
           {/* <a href="https://djon.info/">Dark Mode</a> */}
         </nav>
-      <div class="navicon">
-          <div></div>
+      <div id="mobile-nav-toggler">
+        <div class="navicon">
+            <div></div>
+        </div>
       </div>
     </div>
 
@@ -53,7 +54,8 @@ function Navigation() {
   );
 }
 
-Navigation.css=style
+Navigation.css=navigationStyle
+Navigation.afterDOMLoaded = navigationScript
 
 return Navigation
 

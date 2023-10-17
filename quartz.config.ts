@@ -23,11 +23,12 @@ const config: QuartzConfig = {
           light: "#fff5e3",
           lightgray: "#e5e2dd",
           gray: "#c2c0bc",
-          darkgray: "#4e4e4e",
+          darkgray: "#4e4e4e", // highlifht text color and icon color
           dark: "#2b2b2b",
           secondary: "#ffa500",
           tertiary: "#ffd078",
           highlight: "#fff5e3b3",
+          lighttransparent: " #fff5e3a6"
         },
         darkMode: {
           light: "#181716",
@@ -36,8 +37,9 @@ const config: QuartzConfig = {
           darkgray: "#d4d4d4",
           dark: "#ececeb",
           secondary: "#ffd078",
-          tertiary: "#f9e39b",
+          tertiary: "#ffd078",
           highlight: "#a9a18f26",
+          lighttransparent: "#181716b2"
         },
       },
     },

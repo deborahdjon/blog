@@ -3,7 +3,7 @@ title: "Deborah Djon"
 showToc: false
 ---
 <style>
-.article-title , .content-meta, .graph{
+.article-title , .content-meta, .graph, .explorer{
     display: none
 }
 
@@ -420,6 +420,8 @@ window.onload = function() {
   window.addEventListener('scroll', checkScroll);
   checkScroll()
 };
+
+
 
 
 

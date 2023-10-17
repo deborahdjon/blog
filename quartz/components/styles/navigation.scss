@@ -2,40 +2,35 @@
   @use  "../../styles/variables.scss" as *; 
 
 /* Navigation desktop */
-
-#navigation-desktop{
-
+#navigation-desktop {
   nav {
+    display: flex;
     z-index: 10;
-    background-color: #fff5e3b3;
-    justify-content: right;
+    background-color: var(--lighttransparent);
+    justify-content: flex-end;  // Align items to the right
     align-items: center;
     width: 100%;
     padding: 20px;
     font-size: 14pt;
-    display: flex;
     position: fixed;
     top: 0;
     right: 0;
-    align-items: center!important;
-    font-family: Gill Sans,Gill Sans MT,Calibri,'Trebuchet MS',sans-serif !important;
+    font-family: Gill Sans, Gill Sans MT, Calibri, 'Trebuchet MS', sans-serif;
     height: 25px;
 
-    ul li {
-      cursor: pointer;
-      // display: inline-block !important; 
-      margin: 0 10px !important; 
-      list-style: none !important;
-      position: relative;
-      
-      /* Line under navigation */
-      a {
+    ul{
+      li {
+        cursor: pointer;
+        display: inline-block;
+        margin: 0 10px;
         color: #ffa500;
-        // font-weight: var(--bs-body-font-weight)!important;
-        // line-height: var(--bs-body-line-height)!important;
-        &::hover {
-          color: #ffa500 !important;
+        list-style: none;
+        position: relative;
+        // flex-direction: row;
+        a , a:hover{
+          color: #ffa500 !important;          
         }
+        /* Line under navigation */
         &::after {
           content: '';
           height: 3px;
@@ -46,47 +41,37 @@
           bottom: -5px;
           transition: 0.5s;
         }
-  
-        &::hover::after {
+        &:hover::after {
           width: 100%;
         }
-  
       }
-
-
-
-    }
-
+  }
   }
 
-  
   /* Deborah Djon Logo */
   #logo {
     z-index: 20;
     position: fixed;
     top: 10px;
     left: 10px;
+    svg {
+      height: 5em;
+      cursor: pointer;
+      path {
+        height: 4em;
+        cursor: pointer;
+        stroke: #ffa500;
+        stroke-width: 10px;
+        stroke-linecap: round;
+        fill: none;
+        stroke-linejoin: round; // Removed double quotes
+      }
+    }
+    &:hover svg path {
+      stroke: #514e47;
+    }
   }
-  #logo svg {
-    height: 5em;
-    cursor: pointer;
-  }
-  #logo svg path {
-    height: 4em;
-    cursor: pointer;
-    stroke: #ffa500;
-    stroke-width: 10px;
-    stroke-linecap: round;
-    fill: none;
-    stroke-linejoin: "round";
-  }
-  #logo:hover svg path {
-    stroke: #514e47;
-  }
-
-
 }
-
 
 
 //Mobile Navigation Credit: https://codepen.io/sorinbotirla/pen/QyoYgx
@@ -97,7 +82,6 @@
   display: flex;
   // flex-direction: column;
   // align-content: center !important;
-  $nav-dist-left: calc(100% - 50px);
   $nav-dist-top: 50px;
   width: 100vw;
   // height: 100vh;
@@ -106,29 +90,30 @@
   z-index: 10;
 
   nav {
-    background: rgba(255, 255, 255, 0.95);
+    background: var(--lighttransparent);
+    color: $color-accent-dark !important ;
 
-    width: 100%;
-    height: 100%;
-
+    width: 100vw;
+    height: 100vh;
+    
     display: flex;
+    position: fixed;
     flex-direction: column;
     justify-content: center;
-    justify-items: center;
     text-align: center;
 
     top: initial;
     left: initial;
     padding: 0;
-    -webkit-clip-path: circle(24px at $nav-dist-left $nav-dist-top);
-    clip-path: circle(24px at $nav-dist-left $nav-dist-top);
+    -webkit-clip-path: circle(0px at $nav-dist-left $nav-dist-top);
+    clip-path: circle(0px at $nav-dist-left $nav-dist-top);
     -webkit-transition: -webkit-clip-path 0.5625s, clip-path 0.375s;
     transition: -webkit-clip-path 0.5625s, clip-path 0.375s;
-      &:hover {
+      &.show-nav {
         -webkit-transition-timing-function: ease-out;
         transition-timing-function: ease-out;
-        -webkit-transition-duration: 0.75s;
-        transition-duration: 0.75s;
+        -webkit-transition-duration: 0.6s;
+        transition-duration: 0.6s;
         $nav-radius: 60vh;
         -webkit-clip-path: circle(calc($nav-radius*2 )at calc($nav-dist-left ) calc($nav-dist-top ));
         clip-path: circle(calc($nav-radius*2 )at calc($nav-dist-left ) calc($nav-dist-top));
@@ -146,7 +131,7 @@
       user-select: none;
       &:hover { 
         background:  #ffd0788f; 
-        // color: $color-accent-dark ;
+        color: $color-accent-dark !important ;
       }
     }
   }
@@ -170,46 +155,55 @@
   //   clip-path: circle(390px at 150px 24px);
   // }
   
-    
-  .navicon {
+  
+  #mobile-nav-toggler{
+    padding: 10px;
     $nav-icon-width: 20px;
-    // width: $nav-icon-width;
-    // height: $nav-icon-width;
-    top: calc($nav-dist-top - $nav-icon-width/2);
-    left: calc($nav-dist-left - $nav-icon-width/2);
-    padding: 0;
-    margin: 0;
+    top: calc($nav-dist-top - 10px);
+    left: calc($nav-dist-left );
     z-index: 10;
     position: fixed;
+    width: $nav-icon-width;
+    height: $nav-icon-width;
 
-    // cursor: pointer;
-    // -webkit-transform-origin: 32px 24px;
-    // -ms-transform-origin: 32px 24px;
-    // transform-origin: 32px 24px;
-    div{
-      $navicon-elem-offset: 7px;
-      position: relative;
-      width: $nav-icon-width;
-      height: 2px;
-      background: rgba(0, 0, 0, 0.87);
-      top:$navicon-elem-offset ;
 
-      &:before, &:after{
+    .navicon {
+      // width: $nav-icon-width;
+      // height: $nav-icon-width;
+      padding: 0;
+      margin: 0;
+
+      // cursor: pointer;
+      // -webkit-transform-origin: 32px 24px;
+      // -ms-transform-origin: 32px 24px;
+      // transform-origin: 32px 24px;
+      div{
+        $navicon-elem-offset: 7px;
+        position: relative;
         width: $nav-icon-width;
         height: 2px;
-        background: rgba(0, 0, 0, 0.87);
-        display: block;
-        content: "";
-        position: absolute;
+        background: var(--darkgray);
+
+        top:$navicon-elem-offset ;
+
+        &:before, &:after{
+          width: $nav-icon-width;
+          height: 2px;
+          background: var(--darkgray);
+
+          display: block;
+          content: "";
+          position: absolute;
+        }
+        &:before{
+          top: - $navicon-elem-offset;
+        }
+        &:after{
+          top:$navicon-elem-offset;
+        }
       }
-      &:before{
-        top: - $navicon-elem-offset;
-      }
-      &:after{
-        top:$navicon-elem-offset;
-      }
+      
     }
-    
   }
 
 }
@@ -229,7 +223,7 @@
       display: initial !important; // Show mobile navigation on small screens (e.g., mobile devices)
   }
 
-  #navigation-deskto {
+  #navigation-desktop {
       display: none !important; // Hide tablet and desktop navigation on small screens
   }
 }
