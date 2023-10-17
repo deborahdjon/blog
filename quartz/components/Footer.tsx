@@ -15,7 +15,7 @@ export default ((opts?: Options) => {
 
         <hr />
 
-        <ul> 
+        <ul class="more-info-link"> 
           {Object.entries(links).map(([text, link]) => (
             <li>
               <a href={link}>{text}</a>
@@ -23,9 +23,9 @@ export default ((opts?: Options) => {
           ))}
         </ul>
 
-        <p>
+        {/* <p>
           Created with <a href="https://quartz.jzhao.xyz/">Quartz v{version}</a>, © Deborah Djon {year}
-        </p>
+        </p> */}
         
         
       </footer>

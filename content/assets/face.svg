@@ -5,6 +5,7 @@
     <g stroke-linecap="round">
         <path id="face-svg" 
             fill="none" 
+            stroke="orange"
             stroke-width="4" 
             stroke-opacity="1.00" 
             stroke-linejoin="round"
