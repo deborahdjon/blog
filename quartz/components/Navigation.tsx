@@ -12,13 +12,13 @@ function Navigation() {
       <nav id="NavBar-id">
           <ul>
             <li><a href="/">Home</a></li>
-            <li><a href="https://djon.info/Projects/" >Projects</a></li>
-            <li><a href="https://djon.info/cv/" >CV</a></li>
-            <li><a href="https://djon.info/Blog/">Blog</a></li>
+            <li><a href="https://djon.info/Projects" >Projects</a></li>
+            <li><a href="https://djon.info/cv" >CV</a></li>
+            <li><a href="https://djon.info/Blog">Blog</a></li>
         </ul>
       </nav>
         <div id="logo" class="line-container">
-          <a href="https://djon.info/about/">
+          <a href="https://djon.info/About">
             <svg  viewBox="0.00 0.00 400.00 200.00">
               <g stroke-linecap="round">
               <path d="M18.34,29.23 C18.34,29.23 19.09,28.17 19.09,28.17 C19.14,34.58 19.21,48.31 19.23,55.62 C19.07,71.04 18.82,102.48 18.92,103.03 C19.01,103.52 19.30,104.32 19.78,105.46"/>
@@ -35,10 +35,10 @@ function Navigation() {
         <nav>
           {/* Credit: https://codepen.io/sorinbotirla/pen/QyoYgx */}
           <a href="/">Home</a>
-          <a href="https://djon.info/Projects/" >Projects</a>
-          <a href="httos://djon.info/cv/" >CV</a>
-          <a href="https://djon.info/Blog/">Blog</a>
-          <a href="https://djon.info/About/">About</a>
+          <a href="https://djon.info/Projects" >Projects</a>
+          <a href="httos://djon.info/cv" >CV</a>
+          <a href="https://djon.info/Blog">Blog</a>
+          <a href="https://djon.info/About">About</a>
         </nav>
       <div id="mobile-nav-toggler">
         <div class="navicon">
