@@ -215,44 +215,51 @@ DISCLAIMER ⚠️ This Website is still in the making.
 </div>
 
 <div class="map-popover" id="pin-dallas-desc">
-  <p class="h3">Test</p>
-  <p>I am describing a test</p>
+  <p class="h3">Dallas, USA: Web Engineering Intern</p>
+  <p>
+Working on features for the [Nokia Open Ecosystem Network](https://open-ecosystem.org/). The tasks is to add information to the metrics dashboard of the webpage. It involves front-end as well as back-end programming. Programming Languages, Frameworks: Drupal , PHP, Javascript, REST, SQL.
+</p>
 </div>
 
 <div class="map-popover" id="pin-dublin-desc">
-  <p class="h3">Test</p>
-  <p>I am describing a test</p>
+  <p class="h3">Dublin, Ireland: MSc Computing</p>
+  <p>Completed masters at Dublin City University. Core modules included "Data Analytics and Data Mining", "Cloud Technologies" and "Artificial Intelligence and Information Seeking"</p>
 </div>
 
 <div class="map-popover" id="pin-belfast-desc">
-  <p class="h3">Test</p>
-  <p>I am describing a test</p>
+  <p class="h3">Belfast, United Kingdom: Intern Illustration.</p>
+  <p>Created social media content for the startup GoFyt. In addition, I coordinated customer relations efforts. </p>
 </div>
 
 <div class="map-popover" id="pin-stuttgart-desc">
-  <p class="h2">Test</p>
-  <p>I am describing a test</p>
+  <p class="h2">Stuttgart, Germany: BSc Computer Science</p>
+  <p>Completed a corporate-sponsored 3-year undergraduate programme in cooperation with Nokia Germany. Gathered industry experience in internships every semester, learned relevant experience in 12-week lecture and exam periods.</p>
 </div>
 
 <div class="map-popover" id="pin-paris-desc">
-  <p class="h3">Test</p>
-  <p>I am describing a test</p>
+  <p class="h3">Paris-Saclay, Frame: Internship</p>
+  <p>Working on my bachelor's thesis with the title "Machine Learning Aided Resource Allocation in an Open Software Defined Networking Controller"  
+  
+For the thesis, I created an application that aids the open source optical software defined networking (SDN) controller OpenDaylight TransportPCE in solving the routing, modulation, and spectrum allocation problem (RMSA) using deep reinforcement learning.  
+  
+Technologies used:  Python , Java , Bash , Docker , JSON-RPC  , OpenDaylight, Honeynode WDM and OTN device simulator</p>
 </div>
 
 
 <div class="map-popover" id="pin-vietnam-desc">
-  <p class="h3">Test</p>
-  <p>I am describing a test</p>
+  <p class="h3">Vietnam: Intern</p>
+  <p>Web engineering intern. The team for the internship in Dallas Texas was in Vietnam. I learned to work across three time zones spanning from the United States to Vietnam.</p>
 </div>
 
 <div class="map-popover" id="pin-ottawa-desc">
-  <p class="h3">Test</p>
-  <p>I am describing a test</p>
+  <p class="h3">Ottawa, Canada: Intern</p>
+  <p>Comparing different AWS cloud storage solutions for data queries and cost efficiency.  
+  Technologies:  AWS S3, Athena, Glue, AWS Redshift, Redshift Spectrum, AWS EMR, AWS Timestream</p>
 </div>
 
 <div class="map-popover" id="pin-hester-desc">
-  <p class="h3">Test</p>
-  <p>I am describing a test</p>
+  <p class="h3">Hester, United States: High-School Year.</p>
+  <p>During my secondary education I spent one year in Louisiana, taking classes at Luthcher High School. The year broadened my horizons, I improved my English and became a competitive powerlifter.</p>
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
