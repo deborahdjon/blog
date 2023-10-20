@@ -13,7 +13,7 @@ function Navigation() {
           <ul>
             <li><a href="/">Home</a></li>
             <li><a href="https://djon.info/Projects/" >Projects</a></li>
-            <li><a href="https://djon.info/CV/" >CV</a></li>
+            <li><a href="https://djon.info/cv/" >CV</a></li>
             <li><a href="https://djon.info/Blog/">Blog</a></li>
         </ul>
       </nav>
@@ -36,7 +36,7 @@ function Navigation() {
           {/* Credit: https://codepen.io/sorinbotirla/pen/QyoYgx */}
           <a href="/">Home</a>
           <a href="https://djon.info/Projects/" >Projects</a>
-          <a href="httos://djon.info/CV/" >CV</a>
+          <a href="httos://djon.info/cv/" >CV</a>
           <a href="https://djon.info/Blog/">Blog</a>
           <a href="https://djon.info/About/">About</a>
         </nav>
