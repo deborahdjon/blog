@@ -11,10 +11,25 @@ width:100%;
 height: 80vh;
 margin-top:-80px;
 }
-
+body, html {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+#pdfIframe {
+	height: calc(100vh - 60px); /* Adjust as per your footer's height */
+	width: 100%;
+}
+#footer {
+	height: 60px; /* Adjust as per your footer's height */
+}
 </style>
+# Resume
+<iframe id="pdfIframe" src="/assets/CV_Deborah_Djon.pdf"></iframe>
+<div id="footer">Your Footer</div>
 
 
-![[CV_Deborah_Djon.pdf#page=1|500]]
+
 
 

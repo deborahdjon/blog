@@ -6,43 +6,6 @@ showToc: false
 .article-title , .content-meta, .graph, .explorer{
     display: none
 }
-
-/* 
-#greeting{
-    padding-right:10px;
-    margin-top: -100px;
-}
-
-#greeting .h2{
-   margin-bottom:55px;
-   margin-right: 10px; 
-}
-
-#description{
-  text-align: justify;
-  margin-bottom: 100px;
-}
-
-p{
-font-size:16pt;
-}
-
-
-
-
-.info-card .card-body, .info-card img{
-  width:45%;
-  padding:0;
-  margin:0;
-
-}
-
-.info-box, .info-card, .card{
-  background-color: transparent !important;
-} */
-
-
-
 </style>
 
 
