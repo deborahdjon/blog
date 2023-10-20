@@ -76,43 +76,42 @@ DISCLAIMER ⚠️ This Website is still in the making.
 
 
 <div id="projects">
-    <p class="h2 center-text">Projects<p>
-    <div id="projects-info-box" class="info-box">
-        <div class="info-box-content">
-            <div class="info-card">
-              <a href="https://github.com/deborahdjon/Student_Research_Project_NLP_Movie_Script_Summary">
-                  <p class="h3 center-text">Bachelor Thesis</p>
-                  <div class="card-body">
-                    <img src="assets/networking.jpg" class="card-img-top" alt="...">
-                      <p class="card-text">Implementing a machine learning library for resource allocation in opticla netowks. Implementing a machine learning library for resource allocation in opticla netowks. Implementing a machine learning library for resource allocation in opticla netowks.</p>
-                  </div>
-              </a>
+  <p class="h2 center-text">Projects<p>
+  <div id="projects-info-box" class="info-box">
+      <div class="info-card">
+        <p class="h3 center-text crard-title">Bachelor Thesis</p>
+        <div class="card-body">
+          <a href="https://djon.info/Projects/Bachelor-Thesis">
+            <img src="assets/networking.jpg" class="card-img-top" alt="..."> 
+          </a>
+          <p class="card-text"> I created an Interface for using a machine learning library for resource allocation in an open software defined networking controller (SDN) to enable further research on next generation Optial Networks at Nokia Bell Labs. The work is part of a larger research effort and was presented at the ODN confrerence and is available at <a href="www.google.com">here</a> ... . <br> Technologies: Python, Java, JSON-RPC, Docker, And Stuff </p>
+        </div>
+      </div>
+      <hr >
+      <div class="info-card" >
+          <a href="https://github.com/deborahdjon/Student_Research_Project_NLP_Movie_Script_Summary">
+            <p class="h3 center-text">Movie Summary</p>
+            <div class="card-body">
+              <img src="assets/film.jpg" class="card-img-top" alt="...">
+              <p class="card-text">This natural language processing (NLP) research effort used openly-available movie </p>
             </div>
-            <hr class=".stroke1 mobile-only">
-        <div class="info-card" >
-            <a href="https://github.com/deborahdjon/Student_Research_Project_NLP_Movie_Script_Summary">
-              <p class="h3 center-text">Movie Summary</p>
+          </a>
+      </div>
+      <hr class=".stroke1">
+      <div class="info-card">
+          <a href="https://github.com/deborahdjon/crazy8sbot">
+              <p class="h3 center-text">Crazy8sbot</p>
               <div class="card-body">
-                <img src="assets/film.jpg" class="card-img-top" alt="...">
-                <p class="card-text">Analysing movie scripts to create content-based movie summary.</p>
+                <img src="assets/cards.jpg" class="card-img-top" alt="...">
+                <p class="card-text">Python Telegrambot for playing crazy eight's in a group chat.</p>
               </div>
-            </a>
-        </div>
-        <hr class=".stroke1">
-        <div class="info-card">
-            <a href="https://github.com/deborahdjon/crazy8sbot">
-                <p class="h3 center-text">Crazy8sbot</p>
-                <div class="card-body">
-                  <img src="assets/cards.jpg" class="card-img-top" alt="...">
-                  <p class="card-text">Python Telegrambot for playing crazy eight's in a group chat.</p>
-                </div>
-            </a>
-        </div>
+          </a>
+      </div>
+        <p class="more-info-link" id="more-button"><a href="https://djon.info/Projects/">More →</a></p>
+  </div>
 </div>
-<div class=>
-<p class="more-info-link"><a href="https://djon.info/Projects/">More →</a></p>
-</div>
-</div>
+
+
 <div id="skills">
   <p class="h2 center-text"> Toolbox </p>
     <div id="skills-info-box" class="info-box" >
