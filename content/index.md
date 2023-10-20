@@ -210,7 +210,7 @@ DISCLAIMER ⚠️ This Website is still in the making.
     </g>  
   </svg>
 
-<p class="more-info-link"><a href="https://djon.info/CV">Full CV →</a></p>
+<p class="more-info-link"><a href="https://djon.info/cv">Full CV →</a></p>
 
 </div>
 
