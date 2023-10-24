@@ -184,7 +184,7 @@ async function renderGraph(container: string, fullSlug: FullSlug) {
 
   function nodeRadius(d: NodeData) {
     const numLinks = links.filter((l: any) => l.source.id === d.id || l.target.id === d.id).length
-    return 2 + Math.sqrt(numLinks)
+    return 5 + Math.sqrt(numLinks)
   }
 
   // draw individual nodes

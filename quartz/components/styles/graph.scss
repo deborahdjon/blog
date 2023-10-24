@@ -16,8 +16,8 @@
     overflow: hidden;
 
     & > #global-graph-icon {
-      color: var(--dark);
-      opacity: 0.5;
+      color: var(--secondary);
+      opacity: 1;
       width: 18px;
       height: 18px;
       position: absolute;
@@ -30,7 +30,8 @@
       transition: background-color 0.5s ease;
       cursor: pointer;
       &:hover {
-        background-color: var(--lightgray);
+        color: var(--dark);
+        background-color: var(--tertriary);
       }
     }
   }
