@@ -1,5 +1,7 @@
 ---
 showToc: true
+tags:
+  - project
 ---
 #  Analysing Gender Differences in Movie Scripts
 
@@ -13,7 +15,6 @@ The project followed a rigorous process involving data acquisition, preprocessin
 	![[Pasted image 20231023223739.png]]
     
 2. **Data Preprocessing**: This involved several steps:
-    
     - Extracting character names from the scripts. The scripts are in HTML format, with character names found within `<b>` tags and as the first word followed by a `:`.
 	    ![[Pasted image 20231023224141.png]]
     - Splitting words for word counts.
