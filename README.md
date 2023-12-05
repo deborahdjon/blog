@@ -1,20 +1,28 @@
-# Quartz v4
+# Personal Website
 
-> “[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
+## Description
 
-Quartz is a set of tools that helps you publish your [digital garden](https://jzhao.xyz/posts/networked-thought) and notes as a website for free.
-Quartz v4 features a from-the-ground rewrite focusing on end-user extensibility and ease-of-use.
+Welcome to my personal website! This site is built using the react-like [Quartz](https://quartz.jzhao.xyz/) library, a richly featured, open-source job scheduling library that can be integrated within virtually any Java application. I chose Quartz because it allows me to easily post blog posts using my Obsidian vault.
 
-**If you are looking for Quartz v3, you can find it on the [`hugo` branch](https://github.com/jackyzha0/quartz/tree/hugo).**
+I've customized Quartz to suit my needs by:
+- Adding a custom component for navigation
+- Altering the colour scheme
+- Adding animations using CSS and self-made illustrations
+- Incorporating an interactive visualization of work experience placements
 
-🔗 Read the documentation and get started: https://quartz.jzhao.xyz/
+## Content
 
-[Join the Discord Community](https://discord.gg/cRFFHYye7t)
+The website includes:
+- A landing page
+- A section showcasing the projects I've worked on
+- An 'About' page
+- My full CV
 
-## Sponsors
+## Features
 
-<p align="center">
-  <a href="https://github.com/sponsors/jackyzha0">
-    <img src="https://cdn.jsdelivr.net/gh/jackyzha0/jackyzha0/sponsorkit/sponsors.svg" />
-  </a>
-</p>
+Key features of the website include:
+- Full-text search capability
+- Dark mode for easy viewing
+- Browsing content through an interactive linked graph
+
+Feel free to explore and reach out if you have any questions or suggestions!
