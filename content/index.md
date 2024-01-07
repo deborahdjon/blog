@@ -1,10 +1,7 @@
 ---
-title: Welcome
+title:  Welcome!
 ---
 
 
-# Welcome!
-
-I am glad you made it to this [[Creating Quartz Blogs|blog]].
-
-
+## Welcome to Linksights!
+On this personal blog I share experiences on knowledge management with obsidian, data science, productivity and other interesting topics. Articles on this blog are linked and you can explore them using the graph view below. Navigate to connected posts or brows all posts by clocking on the graph icon below!  

@@ -213,7 +213,7 @@ DISCLAIMER ⚠️ This Website is still in the making.
 <div class="map-popover" id="pin-dallas-desc">
   <p class="h3">Dallas, USA: Web Engineering Intern</p>
   <p>
-Working on features for the [Nokia Open Ecosystem Network](https://open-ecosystem.org/). The tasks is to add information to the metrics dashboard of the webpage. It involves front-end as well as back-end programming. Programming Languages, Frameworks: Drupal , PHP, Javascript, REST, SQL.
+Working on features for the <a href="https://open-ecosystem.org/">Nokia Open Ecosystem Network</a>. The tasks is to add information to the metrics dashboard of the webpage. It involves front-end as well as back-end programming. Programming Languages, Frameworks: Drupal , PHP, Javascript, REST, SQL.
 </p>
 </div>
 
@@ -228,7 +228,7 @@ Working on features for the [Nokia Open Ecosystem Network](https://open-ecosyste
 </div>
 
 <div class="map-popover" id="pin-stuttgart-desc">
-  <p class="h2">Stuttgart, Germany: BSc Computer Science</p>
+  <p class="h3">Stuttgart, Germany: BSc Computer Science</p>
   <p>Completed a corporate-sponsored 3-year undergraduate programme in cooperation with Nokia Germany. Gathered industry experience in internships every semester, learned relevant experience in 12-week lecture and exam periods.</p>
 </div>
 

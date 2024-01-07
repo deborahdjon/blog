@@ -14,7 +14,7 @@ function Navigation() {
       <nav id="NavBar-id">
           <ul>
             <li><a href="https://linksights.info/About" >About</a></li>
-            <li><a href="https://linksights.info/Blog">Blog</a></li>
+            <li><a href="/">Blog</a></li>
         </ul>
       </nav>
         <div id="logo" class="line-container">
@@ -47,8 +47,7 @@ function Navigation() {
     <div id="navigation-mobile" >
         <nav>
           {/* Credit: https://codepen.io/sorinbotirla/pen/QyoYgx */}
-          <a href="/">Home</a>
-          <a href="https://linksights.info/Blog">Blog</a>
+          <a href="/">Blog</a>
           <a href="https://linksights.info/About">About</a>
 
         </nav>

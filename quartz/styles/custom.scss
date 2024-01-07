@@ -422,19 +422,23 @@ body {
 .map-popover{
   position: 'absolute';
   z-index: 10;
-  width: 10em;
-  height: 10em; 
+  width: 14em;
+  min-height: 7em; 
+  max-height: 12em;
   /* border: 2px solid orange; */
   border-radius: 10px;
   background-color: var(--gray);
   padding: 1em;
   margin:0;
   display:none;
+  overflow: scroll;
+  p{
+    font-size: 10pt;
+  }
+
 }
 
-.map-popover h2,.map-popover p{
-  margin:0;
-}
+
 .info-card{
   display: flex;
   width: 600px;
