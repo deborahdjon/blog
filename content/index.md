@@ -1,1 +1,10 @@
-This is the Blog. It is not done yet, but you will be able to browse the pages of the blog using the graph view below. 
+---
+title: Welcome
+---
+
+
+# Welcome!
+
+I am glad you made it to this [[Creating Quartz Blogs|blog]].
+
+
