@@ -18,7 +18,7 @@ body, html {
 	overflow: hidden;
 }
 #pdfIframe {
-	height: calc(100vh - 60px); /* Adjust as per your footer's height */
+	height: calc(100vh - 80px); /* Adjust as per your footer's height */
 	width: 100%;
 }
 #footer {
