@@ -60,15 +60,15 @@
       path {
         height: 4em;
         cursor: pointer;
-        stroke: var(--secondary);
-        stroke-width: 10px;
+        stroke: none;
+        stroke-width: 1px;
         stroke-linecap: round;
-        fill: none;
+        fill: var(--secondary);
         stroke-linejoin: round; // Removed double quotes
       }
     }
     &:hover svg path {
-      stroke: #514e47;
+      fill: #514e47;
     }
   }
 }
@@ -227,3 +227,4 @@
       display: none !important; // Hide tablet and desktop navigation on small screens
   }
 }
+

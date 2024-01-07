@@ -1,6 +1,6 @@
 ---
 draft: "true"
-showToc: true
+showToc: false
 ---
 
 # China as a Digital Trailblazer - Is the World's Superpower Outpacing the West?
