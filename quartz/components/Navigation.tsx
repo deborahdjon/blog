@@ -48,8 +48,8 @@ function Navigation() {
         <nav>
           {/* Credit: https://codepen.io/sorinbotirla/pen/QyoYgx */}
           <a href="/">Home</a>
-          <a href="https://djon.info/Blog">Blog</a>
-          <a href="https://djon.info/About">About</a>
+          <a href="https://linksights.info/Blog">Blog</a>
+          <a href="https://linksights.info/About">About</a>
 
         </nav>
       <div id="mobile-nav-toggler">
@@ -58,9 +58,6 @@ function Navigation() {
         </div>
       </div>
     </div>
-
-
- 
   </div>
   );
 }
