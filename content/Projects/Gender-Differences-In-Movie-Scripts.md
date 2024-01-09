@@ -1,6 +1,6 @@
 ---
-showToc: true
-tags: []
+showToc: false
+tags:
 ---
 #  Analysing Gender Differences in Movie Scripts
 
