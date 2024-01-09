@@ -1,7 +1,7 @@
 ---
-title:  Welcome!
+title: Welcome!
+date:
 ---
-
-
 ## Welcome to Linksights!
-On this personal blog I share experiences on knowledge management with obsidian, data science, productivity and other interesting topics. Articles on this blog are linked and you can explore them using the graph view below. Navigate to connected posts or brows all posts by clocking on the graph icon below!  
+This blog is all about knowledge management, data science, productivity and other interesting insights. We live in a connected world, and in this manner, blog posts are linked to one another. You can explore them using the graph view below. Navigate to posts connected to this blog post or browse the whole blog by clicking the orange graph symbol blow. Enjoy!
+

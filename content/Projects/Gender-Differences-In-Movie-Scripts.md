@@ -1,7 +1,6 @@
 ---
 showToc: true
-tags:
-  - project
+tags: []
 ---
 #  Analysing Gender Differences in Movie Scripts
 
@@ -39,13 +38,13 @@ The project utilised several technologies and tools:
 The code for this project is available on [GitHub](https://github.com/deborahdjon/Data_Management_And_Visualisation_Assignment).
 
 ## Visualisations
-<iframe src="https://djon.info/Data_Management_And_Visualisation_Assignment/Graphs/index_charector_count.html" width="100%" height="500">
+<iframe src="https://linksights.info/Data_Management_And_Visualisation_Assignment/Graphs/index_charector_count.html" width="100%" height="500">
 </iframe>
 
-<iframe src="https://djon.info/Data_Management_And_Visualisation_Assignment/Graphs/index_charector_occurrence.html" width="100%" height="500">
+<iframe src="https://linksights.info/Data_Management_And_Visualisation_Assignment/Graphs/index_charector_occurrence.html" width="100%" height="500">
 </iframe>
 
-<iframe src="https://djon.info/Data_Management_And_Visualisation_Assignment/Graphs/index_charector_word_count.html" width="100%" height="500">
+<iframe src="https://linksights.info/Data_Management_And_Visualisation_Assignment/Graphs/index_charector_word_count.html" width="100%" height="500">
 </iframe>
 
 
