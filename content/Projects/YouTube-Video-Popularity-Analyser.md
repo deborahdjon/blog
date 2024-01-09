@@ -1,6 +1,8 @@
 This web application was created as a group assignment by a team of 6 members.
+<div class=iframe-container>
+<iframe width="427" height="300" src="https://www.youtube.com/embed/woDV2NUmlX8/>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
-![Watch the Demo](https://www.youtube.com/embed/woDV2NUmlX8)
 
 [Code available here.](https://github.com/deborahdjon/Cloud_Technologies_Assignment)
 
