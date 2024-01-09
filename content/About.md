@@ -25,7 +25,7 @@ d="M15.6467 622.482C15.6467 622.482 17.1951 683.046 16.2532 689.869C15.3113 696.
 </div>
 
 <div id="description">
-DISCLAIMER ⚠️ This Website is still in the making.
+DISCLAIMER ⚠️ This Website is still in the making. Please refresh the page if images have not loaded. 
     <p>
         I'm a MSc Computing graduate on the Dublin City University Dean's Honours list.  My major is in <span class="text-accent">Artificial Intelligence</span>. 
         During my corporate-sponsored undergraduate degree I gathered 1.5 years of <span class="text-accent">internatinal industry experience</span> in internships at Nokia. 
