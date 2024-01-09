@@ -48,7 +48,7 @@ DISCLAIMER ⚠️ This Website is still in the making. Please refresh the page i
       </div>
       <hr >
       <div class="info-card" >
-          <a href="https://linksights.info/Projects/Gender-Differences-In-Movie-Scripts">
+          <a href="https://github.com/deborahdjon/Student_Research_Project_NLP_Movie_Script_Summary/blob/main/Studienarbeit-Deborah_Djon_9537809-Lea_Vergari_8521072.pdf">
             <p class="h3 center-text">Movie Summary</p>
             <div class="card-body">
               <img src="assets/film.jpg" class="card-img-top" alt="...">
