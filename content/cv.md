@@ -3,7 +3,7 @@ title: Resume Deborah Djon
 showToc: false
 ---
 <style>
-.article-title , .content-meta, .graph{
+.article-title , .content-meta{
     display: none
 }
 iframe{
@@ -27,7 +27,7 @@ body, html {
 </style>
 # Resume
 <iframe id="pdfIframe" src="https://linksights.info/assets/CV_Deborah_Djon.pdf"></iframe>
-<div id="footer">Your Footer</div>
+<div id="footer"></div>
 
 
 
