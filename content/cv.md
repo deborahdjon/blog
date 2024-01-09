@@ -26,7 +26,7 @@ body, html {
 }
 </style>
 # Resume
-<iframe id="pdfIframe" src="https://djon.info/assets/CV_Deborah_Djon.pdf"></iframe>
+<iframe id="pdfIframe" src="https://linksights.info/assets/CV_Deborah_Djon.pdf"></iframe>
 <div id="footer">Your Footer</div>
 
 

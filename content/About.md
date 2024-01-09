@@ -40,7 +40,7 @@ DISCLAIMER ⚠️ This Website is still in the making. Please refresh the page i
       <div class="info-card">
         <p class="h3 center-text crard-title">Bachelor Thesis</p>
         <div class="card-body">
-          <a href="https://djon.info/Projects/Bachelor-Thesis">
+          <a href="https://linksights.info/Projects/Bachelor-Thesis">
             <img src="assets/networking.jpg" class="card-img-top" alt="..."> 
           </a>
           <p class="card-text"> I created an Interface for using a machine learning library for resource allocation in an open software defined networking controller (SDN) to enable further research on next generation Optial Networks at Nokia Bell Labs. The work is part of a larger research effort and was presented at the ODN confrerence and is available at <a href="www.google.com">here</a> ... . <br> Technologies: Python, Java, JSON-RPC, Docker, And Stuff </p>
@@ -66,7 +66,7 @@ DISCLAIMER ⚠️ This Website is still in the making. Please refresh the page i
               </div>
           </a>
       </div>
-        <p class="more-info-link" id="more-button"><a href="https://djon.info/Projects/">More →</a></p>
+        <p class="more-info-link" id="more-button"><a href="https://linksights.info/Projects/">More →</a></p>
   </div>
 </div>
 
@@ -206,7 +206,7 @@ DISCLAIMER ⚠️ This Website is still in the making. Please refresh the page i
     </g>  
   </svg>
 
-<p class="more-info-link"><a href="https://djon.info/cv">Full CV →</a></p>
+<p class="more-info-link"><a href="https://linksights.info/cv">Full CV →</a></p>
 
 </div>
 
